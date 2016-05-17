@@ -1,0 +1,4 @@
+.. add project-specific includes here ..
+
+.. |eclipse-update-url| replace:: :userinput:`https://aws.amazon.com/eclipse`
+
