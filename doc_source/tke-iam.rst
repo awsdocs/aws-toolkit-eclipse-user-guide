@@ -176,7 +176,7 @@ For each user you can also generate a set of access keys (an access key ID and a
 These keys can be used to represent the user for programmatic access to AWS |mdash| for example, to
 use the AWS command-line interface (CLI), to sign programmatic requests using the SDK, or to access
 AWS services through the Toolkit. (For information about how to specify credentials for use with the
-Toolkit, see :doc:`tke_setup_creds`.)
+Toolkit, see :doc:`setup-credentials`.)
 
 **To generate access keys for an IAM user**
 

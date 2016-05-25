@@ -14,7 +14,7 @@ Differentiating AWS Resources with Naming
 
 During development of new products or features, it is useful to keep AWS resources that are used for
 development separate from resources that are used for production. One approach to maintaining this
-separation was discussed in the :doc:`tke_setup_creds`, that is, to use different accounts for
+separation was discussed in the :doc:`setup-credentials`, that is, to use different accounts for
 development and production resources. That approach works especially well when using AWS Explorer,
 because AWS Explorer displays resources based on account credentials. This section will discuss an
 alternative approach in which a naming convention is used to differentiate between development and

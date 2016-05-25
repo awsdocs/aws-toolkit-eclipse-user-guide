@@ -16,7 +16,7 @@ This tutorial will guide you through the process of a typical |LAMlong| workflow
 with first-hand experience in using |LAM| with the |tke|.
 
 .. important:: The tutorial assumes that you have an AWS account, have already :doc:`installed the
-   AWS Toolkit for Eclipse <tke_setup>` and that you understand the basic concepts and features of
+   AWS Toolkit for Eclipse <getting-started>` and that you understand the basic concepts and features of
    |LAM|. If you are unfamiliar with |LAM|, you can find out more at the `AWS Lambda
    <http://aws.amazon.com/lambda/>`_ home page and in the |LAM-dg|_.
 

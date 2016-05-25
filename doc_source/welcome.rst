@@ -44,15 +44,19 @@ In addition to this guide, there are a number of other resources available for |
 
 * |sdk-java-ref|_
 
-* `developer blog <https://java.awsblog.com/>`_
+* `Java developer blog <https://java.awsblog.com/>`_
 
-* `developer forums <https://forums.aws.amazon.com/forum.jspa?forumID=70>`_
+* :forum:`Java developer forums <70>`
 
 * GitHub:
 
-  + `source <https://github.com/aws/aws-toolkit-eclipse>`_
+  + :github:`documentation source <awsdocs/aws-toolkit-eclipse-user-guide>`
 
-  + `issues <https://github.com/aws/aws-toolkit-eclipse/issues>`_
+  + :github:`documentation issues <awsdocs/aws-toolkit-eclipse-user-guide/issues>`
+
+  + :github:`toolkit source <aws/aws-toolkit-eclipse>`
+
+  + :github:`toolkit issues <aws/aws-toolkit-eclipse/issues>`
 
 * `@awsforjava (Twitter) <https://twitter.com/awsforjava>`_
 
@@ -60,8 +64,7 @@ In addition to this guide, there are a number of other resources available for |
 
 * `Toolkit FAQ <http://aws.amazon.com//eclipse/faqs/>`_
 
-* `Getting Started with the AWS SDK for Java
-  <http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/java-dg-setup.html>`_
+* :java-dg:`Getting Started with the AWS SDK for Java <getting-started>`
 
 * `Installing the AWS Toolkit for Eclipse (video)
   <http://media.amazonwebservices.com/videos/eclipse-java-sdk-video.html>`_

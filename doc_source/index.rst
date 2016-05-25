@@ -18,7 +18,7 @@
    :includehidden:
 
    welcome
-   tke_setup
+   getting-started
    tke_basics
    aws_explorer
    document-history

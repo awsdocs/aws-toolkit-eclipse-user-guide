@@ -8,9 +8,9 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-#########################################
-Working with |AWSlong| Access Credentials
-#########################################
+######################
+Set up AWS Credentials
+######################
 
 To access |AWSlong| with |tke|, you must configure the |tke| with your AWS account credentials. In
 addition to allowing the |tke| to access your account, your access keys are used to sign web
@@ -22,16 +22,16 @@ track service usage for billing purposes.
    :depth: 1
    :local:
 
-Getting your AWS Access Keys
-============================
+Get your AWS access keys
+========================
 
-.. include:: aws-get-keys.txt
+.. include:: common/procedure-get-access-keys.txt
 
 
 .. _how_to_add_creds:
 
-Adding your AWS Access Keys to the |tke|
-========================================
+Add your AWS access keys to the |tke|
+=====================================
 
 The |tke| now uses the same system for locating and using AWS access keys as that used by the AWS
 CLI and AWS Java SDK. Access keys entered in the Eclipse IDE are saved to a :emphasis:`shared AWS
@@ -58,12 +58,11 @@ detect and use those credentials. For more information about using the AWS CLI, 
 Here's an example of a configured set of default credentials:
 
 .. image:: images/tke-preferences.png
-    :scale: 50%
 
 
 .. _using_profiles:
 
-Using Multiple AWS Accounts with the |tke|
+Using multiple AWS accounts with the |tke|
 ==========================================
 
 The :guilabel:`Preferences` dialog box allows you to add information for more than one AWS account.
@@ -95,7 +94,6 @@ associated with the default account, and when you create a new application throu
 application uses the credentials for the configured default account.
 
 .. image:: images/tke-pref-select-profile.png
-    :scale: 50%
 
 .. note:: For an alternative approach to separate your AWS resources, see
     :doc:`differentiate-resources-with-naming`.
@@ -103,7 +101,7 @@ application uses the credentials for the configured default account.
 
 .. _set_credfile_location:
 
-Changing the AWS Credentials File Location
+Changing the AWS credentials file location
 ==========================================
 
 Using the |tke| Preferences screen, you can change the location used by the Toolkit to store and
@@ -115,10 +113,8 @@ load credentials.
   and enter the pathname of the file where you would like your AWS credentials stored.
 
   .. image:: images/tke-pref-set-credfile-loc.png
-     :scale: 50%
 
 .. important:: It is :emphasis:`strongly recommended` that you don't store your AWS credential
    information within any network-shared directory or within any source-control-managed projects.
    You should always retain strict control of your AWS access keys!
-
 

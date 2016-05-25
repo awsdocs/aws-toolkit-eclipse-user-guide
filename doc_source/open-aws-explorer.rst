@@ -27,7 +27,7 @@ View`.
 You can expand each node in |explorer| to view resources on AWS that are associated with your
 account. For example, if you click the white triangle to the left of the :guilabel:`Amazon EC2`
 node, it will expand and display |EC2| resources associated with your AWS account. The |tke| uses
-the AWS account that you configured in the :doc:`tke_setup_creds` to determine which resources to
+the AWS account that you configured in the :doc:`setup-credentials` to determine which resources to
 display.
 
 .. image:: images/tke-aws-explorer-expanded.png

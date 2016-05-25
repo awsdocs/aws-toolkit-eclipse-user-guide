@@ -14,7 +14,7 @@ Using |explorer|
 
 |explorer| gives you a view of, and allows you to manipulate, multiple |AWSlong| simultaneously.
 This section provides information about how to access and use the |explorer| view in Eclipse. It
-assumes that you've already :doc:`installed <tke_setup>` the |tke| on your system.
+assumes that you've already :doc:`installed <setup-install>` the |tke| on your system.
 
 .. toctree::
    :maxdepth: 1

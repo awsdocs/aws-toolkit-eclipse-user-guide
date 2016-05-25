@@ -8,9 +8,9 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-##############################
-Getting Started with the |tke|
-##############################
+###############
+Getting Started
+###############
 
 This section provides information for those getting started with the |tke|, including information
 about how to install and configure the |tke|.
@@ -18,8 +18,7 @@ about how to install and configure the |tke|.
 .. toctree::
    :maxdepth: 1
 
-   tke_setup_prereqs
-   tke_setup_install
-   tke_setup_creds
-   tke_setup_keypairs
+   setup-install
+   setup-credentials
+   setup-keypairs
 

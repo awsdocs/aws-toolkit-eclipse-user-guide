@@ -36,14 +36,14 @@ June 16, 2014
 September 27, 2013
     * The |tke| now uses the same system for storing and accessing AWS credentials as the AWS CLI
       and AWS SDKs, which includes the ability to use multiple profiles to store more than one set
-      of credentials. For information, see the newly-updated topic: :doc:`tke_setup_creds`.
+      of credentials. For information, see the newly-updated topic: :doc:`setup-credentials`.
 
     * The |tke| Getting Started Guide has been restructured in alignment with other AWS SDK
       Documentation (most notably, the AWS Java SDK upon which the |tke| depends). Much of the
       restructuring should be logical and self-evident, but a description of each of the guide's
       major sections is provided in :doc:`welcome`.
 
-    * :doc:`tke_setup` has been updated for Eclipse 4.3 ("Kepler").
+    * :doc:`getting-started` has been updated for Eclipse 4.3 ("Kepler").
 
 September 9, 2013
     This topic tracks recent changes to the |tke-ug|. It is intended as a companion to the `release notes history
