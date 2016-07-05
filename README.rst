@@ -83,7 +83,7 @@ repository.
 .. =================================================================================
 
 .. _`available sphinx builders`: http://www.sphinx-doc.org/en/stable/builders.html
-.. _`aws toolkit for eclipse user guide`: http://docs.aws.amazon.com/AWSToolkitEclipse/latest/ug/welcome.html
+.. _`aws toolkit for eclipse user guide`: http://docs.aws.amazon.com/eclipse-toolkit/latest/user-guide/welcome.html
 .. _`aws toolkit for eclipse`: https://aws.amazon.com/eclipse/
 .. _`forking the repository`: https://help.github.com/articles/fork-a-repo/
 .. _`pull request`: https://help.github.com/articles/using-pull-requests/
