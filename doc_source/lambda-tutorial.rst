@@ -143,7 +143,7 @@ it access to your AWS resources. The easiest way to do this is with the |console
 Create an |S3| bucket for your |LAM| code
 =========================================
 
-|LAMlong| requires an |S3| bucket to store your Java project when you uplooad it. You can either use
+|LAMlong| requires an |S3| bucket to store your Java project when you upload it. You can either use
 a bucket that already exists in the AWS region in which you'll run your code, or you can create a
 new one specifically for use by |LAM| (recommended).
 
