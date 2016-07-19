@@ -8,13 +8,14 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-################
-Using |explorer|
-################
+#########################
+Working with AWS Services
+#########################
 
 |explorer| gives you a view of, and allows you to manipulate, multiple |AWSlong| simultaneously.
-This section provides information about how to access and use the |explorer| view in Eclipse. It
-assumes that you've already :doc:`installed <setup-install>` the |tke| on your system.
+This section provides information about how to access and use the |explorer| view in Eclipse.
+
+It assumes that you've already :doc:`installed <setup-install>` the |tke| on your system.
 
 .. toctree::
    :maxdepth: 1

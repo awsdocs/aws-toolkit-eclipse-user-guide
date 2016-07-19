@@ -115,9 +115,9 @@ it access to your AWS resources. The easiest way to do this is with the |console
 
 **To create an IAM role for Lambda**
 
-1.  Sign in to the `AWS Management Console <https://console.aws.amazon.com/>`_.
+1.  Sign in to the |console|_.
 
-2.  Open the `AWS Identity and Access Management <https://console.aws.amazon.com/iam/>`_ console.
+2.  Open the :console:`IAM console <iam>`.
 
 3.  Select :guilabel:`Roles` on the sidebar, then :guilabel:`Create New Role`.
 
@@ -149,7 +149,7 @@ new one specifically for use by |LAM| (recommended).
 
 **To create an Amazon S3 bucket for use with Lambda**
 
-1.  Log in to AWS and go to the `Amazon S3 console <https://console.aws.amazon.com/s3>`_.
+1.  Log in to AWS and go to the :console:`S3 console <s3>`.
 
 2.  Click :guilabel:`Create Bucket`.
 

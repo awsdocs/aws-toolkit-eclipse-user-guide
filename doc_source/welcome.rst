@@ -64,7 +64,7 @@ In addition to this guide, there are a number of other resources available for |
 
 * `Toolkit FAQ <http://aws.amazon.com//eclipse/faqs/>`_
 
-* :java-dg:`Getting Started with the AWS SDK for Java <getting-started>`
+* :sdk-java-dg:`Getting Started with the AWS SDK for Java <getting-started>`
 
 * `Installing the AWS Toolkit for Eclipse (video)
   <http://media.amazonwebservices.com/videos/eclipse-java-sdk-video.html>`_

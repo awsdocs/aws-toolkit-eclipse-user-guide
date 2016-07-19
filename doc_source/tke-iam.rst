@@ -313,7 +313,7 @@ For more information about IAM roles, see :iam-ug:`IAM Roles <id_roles>` in the 
 The new IAM role appears in the :guilabel:`Roles` editor.
 
 For examples that show how to access AWS using the IAM role associated with an |EC2| instance, see
-:java-dg:`Using IAM Roles to Grant Access to AWS Resources on Amazon EC2 <java-dg-roles>` in the
+:sdk-java-dg:`Using IAM Roles to Grant Access to AWS Resources on Amazon EC2 <java-dg-roles>` in the
 |sdk-java-dg|.
 
 .. _tke-create-an-iam-policy:

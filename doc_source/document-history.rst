@@ -46,6 +46,6 @@ September 27, 2013
     * :doc:`getting-started` has been updated for Eclipse 4.3 ("Kepler").
 
 September 9, 2013
-    This topic tracks recent changes to the |tke-ug|. It is intended as a companion to the `release notes history
-    <https://aws.amazon.com/releasenotes/Eclipse/>`_.
+    This topic tracks recent changes to the |tke-ug|. It is intended as a companion to the `release
+    notes history <http://aws.amazon.com/releasenotes/Eclipse/>`_.
 

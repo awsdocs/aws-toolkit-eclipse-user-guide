@@ -12,11 +12,7 @@
 Set up AWS Credentials
 ######################
 
-To access |AWSlong| with |tke|, you must configure the |tke| with your AWS account credentials. In
-addition to allowing the |tke| to access your account, your access keys are used to sign web
-services requests to AWS. Signing web services requests ensures that only authorized programs can
-make such requests. Also, by associating access keys with each web services request, AWS is able to
-track service usage for billing purposes.
+To access |AWSlong| with the |tke|, you must configure the |tke| with AWS account credentials.
 
 .. contents:: **Contents**
    :depth: 1
@@ -27,14 +23,13 @@ Get your AWS access keys
 
 .. include:: common/procedure-get-access-keys.txt
 
-
-.. _how_to_add_creds:
+.. _add-access-keys:
 
 Add your AWS access keys to the |tke|
 =====================================
 
-The |tke| now uses the same system for locating and using AWS access keys as that used by the AWS
-CLI and AWS Java SDK. Access keys entered in the Eclipse IDE are saved to a :emphasis:`shared AWS
+The |tke| uses the same system for locating and using AWS access keys as that used by the AWS CLI
+and AWS Java SDK. Access keys entered in the Eclipse IDE are saved to a :emphasis:`shared AWS
 credentials file` (called :file:`credentials`) in the :file:`.aws` sub-directory within your home
 directory.
 
@@ -49,9 +44,9 @@ detect and use those credentials. For more information about using the AWS CLI, 
 1.  Open Eclipse's :guilabel:`Preferences` dialog box and click :guilabel:`AWS Toolkit` in the
     sidebar.
 
-2.  Type or paste your access key ID in the :guilabel:`Access Key ID` box.
+2.  Type or paste your AWS access key ID in the :guilabel:`Access Key ID` box.
 
-3.  Type or paste your secret access key in the :guilabel:`Secret Access Key` box.
+3.  Type or paste your AWS secret access key in the :guilabel:`Secret Access Key` box.
 
 4.  Click :guilabel:`Apply` or :guilabel:`OK` to store your access key information.
 
@@ -70,7 +65,7 @@ Multiple accounts can be useful, for example, to provide developers and administ
 resources for development and for release/publication.
 
 Separate sets of AWS credentials are stored as :emphasis:`profiles` within the shared AWS
-credentials file described in :ref:`how_to_add_creds`. All of the configured profiles can be seen in
+credentials file described in :ref:`add-access-keys`. All of the configured profiles can be seen in
 the drop-down box at the top of the AWS Toolkit Preferences Global Configuration screen, labeled
 :guilabel:`Default Profile`.
 
@@ -116,5 +111,5 @@ load credentials.
 
 .. important:: It is :emphasis:`strongly recommended` that you don't store your AWS credential
    information within any network-shared directory or within any source-control-managed projects.
-   You should always retain strict control of your AWS access keys!
+   Always retain strict control of your AWS access keys!
 
