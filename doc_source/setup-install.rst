@@ -79,3 +79,17 @@ Once you have set up the |tke| you should :doc:`configure your AWS Credentials <
 .. note:: Depending on the options selected, and on factors such as network speed, server latency
    and system capabilities, it may take up to 30 minutes for the installation to complete.
 
+Upgrade the |tke|
+=================
+
+**To upgrade or reinstall the AWS Toolkit for Eclipse, follow the same instructions on installing the
+|tke|. Note that there might be an update site issue in some versions of Eclipse (Mars and Neon) that
+Eclipse doesn't fetch the latest artifacts. Instead, it is still using the old version of the artifacts.
+This is due to a bug in some old versions of Oomph plugin defaulting in Eclipse Mars and later versions.
+The workaround for resolving this problem are:**
+
+* Use https://aws.amazon.com/eclipse/site.xml as the update site.
+
+* Delete :emphasis:`~/.eclipse/org.eclipse.oomph.p2/cache/` folder.
+
+* Upgrade `Oomph plugin <https://wiki.eclipse.org/Eclipse_Installer>`_ to the latest version.
