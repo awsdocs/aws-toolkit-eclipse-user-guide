@@ -8,6 +8,10 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
+.. meta::
+    :description: Install the |tke|.
+    :keywords: tke, install, upgrade, setup
+
 ##################
 Set up the Toolkit
 ##################
@@ -82,14 +86,14 @@ Once you have set up the |tke| you should :doc:`configure your AWS Credentials <
 Upgrade the |tke|
 =================
 
-**To upgrade or reinstall the AWS Toolkit for Eclipse, follow the same instructions on installing the
-|tke|. Note that there might be an update site issue in some versions of Eclipse (Mars and Neon) that
-Eclipse doesn't fetch the latest artifacts. Instead, it is still using the old version of the artifacts.
-This is due to a bug in some old versions of Oomph plugin defaulting in Eclipse Mars and later versions.
-The workaround for resolving this problem are:**
+To upgrade or reinstall the |tke|, use the same instructions for :ref:`installing the toolkit
+<install-tke>`.
 
-* Use https://aws.amazon.com/eclipse/site.xml as the update site.
+Some versions of Eclipse, (notably *Mars* and *Neon*), may fail to fetch the latest artifacts due to
+a bug in old versions of the `Oomph plugin <https://projects.eclipse.org/projects/tools.oomph>`_. To
+work around this issue:
 
-* Delete :emphasis:`~/.eclipse/org.eclipse.oomph.p2/cache/` folder.
+1. Make sure that you're using https://aws.amazon.com/eclipse/site.xml as the |tke| update site.
+2. Delete the :file:`~/.eclipse/org.eclipse.oomph.p2/cache/` directory to remove cached content.
+3. Install the latest version of `Oomph (Eclipse Installer) <https://wiki.eclipse.org/Eclipse_Installer>`_.
 
-* Upgrade `Oomph plugin <https://wiki.eclipse.org/Eclipse_Installer>`_ to the latest version.
