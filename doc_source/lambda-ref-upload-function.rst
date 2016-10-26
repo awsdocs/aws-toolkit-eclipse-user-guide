@@ -15,9 +15,6 @@ Upload |LAMlong| Function Dialog
 The :guilabel:`Upload Lambda Function` dialog will create a |LAM| function and upload your code to
 be run when the |LAM| function is invoked.
 
-.. contents:: **Contents**
-   :depth: 1
-   :local:
 
 Launching the dialog
 ====================

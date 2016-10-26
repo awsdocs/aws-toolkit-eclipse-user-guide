@@ -20,9 +20,6 @@ with first-hand experience in using |LAM| with the |tke|.
    |LAM|. If you are unfamiliar with |LAM|, you can find out more at the `AWS Lambda
    <http://aws.amazon.com/lambda/>`_ home page and in the |LAM-dg|_.
 
-.. contents:: **Contents**
-   :depth: 1
-   :local:
 
 .. _lambda-tutorial-create-handler-class:
 

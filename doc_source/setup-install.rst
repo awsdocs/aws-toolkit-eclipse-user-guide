@@ -16,8 +16,7 @@
 Set up the Toolkit
 ##################
 
-.. contents::
-    :local:
+This section desribes how to install or upgrade the |tke|.
 
 Prerequisites
 =============

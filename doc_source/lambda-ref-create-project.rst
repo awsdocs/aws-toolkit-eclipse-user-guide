@@ -15,9 +15,6 @@ New |LAMlong| Java Project Dialog
 The :guilabel:`New Lambda Java Project` dialog helps you to create and configure a new Java project
 that you can use to author a |LAM| function.
 
-.. contents:: **Contents**
-   :depth: 1
-   :local:
 
 Launching the dialog
 ====================

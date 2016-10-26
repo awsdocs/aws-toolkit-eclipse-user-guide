@@ -22,9 +22,6 @@ lets you specify whether users are allowed to change their own passwords.
    affected credentials can be revoked without needing to change the root credentials for the
    account.
 
-.. contents:: **Contents**
-   :depth: 1
-   :local:
 
 About |IAMlong|
 ===============

@@ -14,9 +14,6 @@ Set up AWS Credentials
 
 To access |AWSlong| with the |tke|, you must configure the |tke| with AWS account credentials.
 
-.. contents:: **Contents**
-   :depth: 1
-   :local:
 
 Get your AWS access keys
 ========================

@@ -15,9 +15,6 @@ Run |LAMlong| Function Dialog
 The :guilabel:`Run Lambda Function` dialog provides a way for you to invoke a |LAM| function
 directly from the Eclipse user interface.
 
-.. contents:: **Contents**
-   :depth: 1
-   :local:
 
 Launching the dialog
 ====================
