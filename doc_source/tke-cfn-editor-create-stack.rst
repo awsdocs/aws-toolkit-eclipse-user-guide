@@ -8,13 +8,18 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-######################################
-Deploying an |CFN| Template in Eclipse
-######################################
+#####################################
+Deploying a |CFN| Template in Eclipse
+#####################################
 
-.. note:: At this time, only files that end in :code:`.template` can be launched from the Eclipse IDE. If
-    your file ends with another extension, such as :code:`.json`, you will need to rename it first
-    with a :code:`.template` extension to use this feature.
+.. meta::
+    :description: How to deploy an AWS Cloudformation template using the AWS Toolkit for Eclipse.
+    :keywords: cloudformation, template, deploying, stack
+
+
+.. note:: Only files that end in :code:`.template` can be launched from the Eclipse IDE. If your
+   file ends with another extension, such as :code:`.json`, you will need to rename it first with a
+   :code:`.template` extension to use this feature.
 
 **To deploy an CloudFormation template from Eclipse**
 

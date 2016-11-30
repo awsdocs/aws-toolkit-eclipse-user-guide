@@ -8,11 +8,15 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-###########################################
-Using the |CFN| Template Editor for Eclipse
-###########################################
+#########################
+The |CFN| Template Editor
+#########################
 
-The |tke| now includes a built-in |CFN| template editor. Among the features supported:
+.. meta::
+    :description: How to use the AWS Cloudformation template editor in the AWS Toolkit for Eclipse.
+    :keywords: cloudformation, template editor, stack editor
+
+The |tke| includes a built-in |CFN| template editor. Among the features supported:
 
 * The ability to create and update stacks directly from the Eclipse IDE from the currently-edited
   template.
@@ -21,11 +25,11 @@ The |tke| now includes a built-in |CFN| template editor. Among the features supp
   rules.
 
 .. toctree::
+   :caption: In this section
    :maxdepth: 1
 
    tke-cfn-editor-adding-template
    tke-cfn-editor-create-stack
    tke-cfn-editor-update-stack
    tke-cfn-editor-validate-stack
-
 

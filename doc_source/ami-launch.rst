@@ -31,7 +31,7 @@ instances. You can find a list of instance types and pricing information on the 
         AMI configuration dialog box
 
 2.  Configure the AMIs view to show the AMI that we'll use in this example. In the filter box, type
-    :userinput:`start ebs`. This filters the list of AMIs to show only those AMIs with names that
+    :command:`start ebs`. This filters the list of AMIs to show only those AMIs with names that
     contains both "start" and "ebs".
 
     Right-click the :guilabel:`amazon/getting-started-with-ebs` AMI and select :guilabel:`Launch`
