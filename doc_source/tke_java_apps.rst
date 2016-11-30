@@ -21,7 +21,7 @@ applications in Java, we'll use the :emphasis:`AmazonSimpleQueueService` sample 
 AWS Explorer that is provided with the |tke| can be used to view the running |SQS| queue.
 
 .. note:: The |sdk-java| samples are provided in the :file:`samples` directory in the SDK download,
-   and can also be viewed on :github:`GitHub <aws-sdk-java/tree/master/src/samples>`.  For more
+   and can also be viewed on :github:`GitHub <aws/aws-sdk-java/tree/master/src/samples>`. For more
    information about the |sdk-java| itself, view the |sdk-java-dg|_.
 
 

@@ -47,5 +47,5 @@ September 27, 2013
 
 September 9, 2013
     This topic tracks recent changes to the |tke-ug|. It is intended as a companion to the `release
-    notes history <http://aws.amazon.com/releasenotes/Eclipse/>`_.
+    notes history <https://aws.amazon.com/releasenotes/Eclipse/>`_.
 

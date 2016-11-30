@@ -8,9 +8,9 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-################################################
-Launch an |EC2| Instance from an |AMIlong| (AMI)
-################################################
+##########################################
+Launch an |EC2| Instance from an |AMIlong|
+##########################################
 
 Before launching an EC2 instance, you should create a security group that will permit network
 traffic that is appropriate to your application to connect to the instance. At a minimum, the
@@ -20,92 +20,87 @@ launch wizard.  Finally, you should think about which instance type is appropria
 application; the price for an EC2 instance is typically higher for the more powerful types of
 instances. You can find a list of instance types and pricing information on the |ec2-pricing|_ page.
 
-**To launch an Amazon EC2 instance**
+.. topic:: To launch an Amazon EC2 instance
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`Amazon EC2` node. Right-click the
-    :guilabel:`Amazon Machine Images (AMIs)` subnode and select :guilabel:`Open EC2 AMIs View`.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`Amazon EC2` node. Right-click the
+        :guilabel:`Amazon Machine Images (AMIs)` subnode and select :guilabel:`Open EC2 AMIs View`.
 
-    .. figure:: images/amzn-exp-open-ami-view.png
-        :scale: 50
+        .. figure:: images/amzn-exp-open-ami-view.png
 
-        AMI configuration dialog box
+           AMI configuration dialog box
 
-2.  Configure the AMIs view to show the AMI that we'll use in this example. In the filter box, type
-    :command:`start ebs`. This filters the list of AMIs to show only those AMIs with names that
-    contains both "start" and "ebs".
+    #.  Configure the AMIs view to show the AMI that we'll use in this example. In the filter box,
+        type :command:`start ebs`. This filters the list of AMIs to show only those AMIs with names
+        that contains both "start" and "ebs".
 
-    Right-click the :guilabel:`amazon/getting-started-with-ebs` AMI and select :guilabel:`Launch`
-    from the context menu.
+        Right-click the :guilabel:`amazon/getting-started-with-ebs` AMI and select
+        :guilabel:`Launch` from the context menu.
 
-    .. figure:: images/ami-view-launch-start-ebs.png
-        :scale: 50
+        .. figure:: images/ami-view-launch-start-ebs.png
 
-        Select the Getting Started with EBS AMI
+           Select the Getting Started with EBS AMI
 
-3.  In the :guilabel:`Launch EC2 Instance` dialog box, configure the AMI for your application.
+    #.  In the :guilabel:`Launch EC2 Instance` dialog box, configure the AMI for your application.
 
-    :emphasis:`Number of Hosts`
-        Set this value to the number of EC2 instances to launch.
+        :emphasis:`Number of Hosts`
+            Set this value to the number of EC2 instances to launch.
 
-    :emphasis:`Instance Type`
-        Select the type of the EC2 instance to launch. You can find a list of instance types and
-        pricing information on the |ec2-pricing|_ page.
+        :emphasis:`Instance Type`
+            Select the type of the EC2 instance to launch. You can find a list of instance types and
+            pricing information on the |ec2-pricing|_ page.
 
-    :emphasis:`Availability Zone`
-        Select an availability zone (AZ) in which to launch the instance. Note that not all AZs are
-        available in all regions. If the AZ that you select is not available, the Toolkit will
-        generate a message saying that you need to select a different AZ. For more information about
-        AZs, go to the :ec2-ug:`Region and Availability Zone FAQ
-        <FAQ_Regions_Availability_Zones.html>` in the |EC2-ug|.
+        :emphasis:`Availability Zone`
+            Select an availability zone (AZ) in which to launch the instance. Note that not all AZs
+            are available in all regions. If the AZ that you select is not available, the Toolkit
+            will generate a message saying that you need to select a different AZ. For more
+            information about AZs, go to the :ec2-ug:`Region and Availability Zone FAQ
+            <using-regions-availability-zones>` in the |EC2-ug|.
 
-    :emphasis:`Key Pair`
-        A key pair is a set of public/private encryption keys that are used to authenticate you when
-        you connect to the EC2 instance using SSH. Select a keypair for which you have access to the
-        private key.
+        :emphasis:`Key Pair`
+            A key pair is a set of public/private encryption keys that are used to authenticate you
+            when you connect to the EC2 instance using SSH. Select a keypair for which you have
+            access to the private key.
 
-        .. image:: images/inline-keypair-create.png
-            :scale: 50
+            .. image:: images/inline-keypair-create.png
 
-    :emphasis:`Security Group`
-        The security group controls what type of network traffic the EC2 instance will accept. You
-        should select a security group that will allow incoming traffic on port 22, i.e. the port
-        that is used by SSH, so that you can connect to the EC2 instance. For information about how
-        to create security groups using the Toolkit, see :doc:`tke-sg`
+        :emphasis:`Security Group`
+            The security group controls what type of network traffic the EC2 instance will accept.
+            You should select a security group that will allow incoming traffic on port 22, i.e. the
+            port that is used by SSH, so that you can connect to the EC2 instance. For information
+            about how to create security groups using the Toolkit, see :doc:`tke-sg`
 
-    :emphasis:`Instance Profile`
-        The instance profile is a logical container for an IAM role. When you select an instance
-        profile, you associate the corresponding IAM role with the EC2 instance. IAM roles are
-        configured with policies that specify access to particular AWS services and account
-        resources. When an EC2 instance is associated with an IAM role, application software that
-        runs on the instance runs with the permissions specified by the IAM role. This enables the
-        application software to run without having to specify any AWS credentials of its own, which
-        makes the software more secure. For in-depth information about IAM roles, go to
-        :iam-ug:`Working with Roles <WorkingWithRoles>` in the |IAM-ug|.
+        :emphasis:`Instance Profile`
+            The instance profile is a logical container for an IAM role. When you select an instance
+            profile, you associate the corresponding IAM role with the EC2 instance. IAM roles are
+            configured with policies that specify access to particular AWS services and account
+            resources. When an EC2 instance is associated with an IAM role, application software
+            that runs on the instance runs with the permissions specified by the IAM role. This
+            enables the application software to run without having to specify any AWS credentials of
+            its own, which makes the software more secure. For in-depth information about IAM roles,
+            go to :iam-ug:`Working with Roles <id_roles>` in the |IAM-ug|.
 
-    :emphasis:`User Data`
-        The user data is data that you provide to the application software that runs on your EC2
-        instance. The application software can access this data through the :ec2-ug:`Instance Meta
-        Data Service (IMDS) <ec2-instance-metadata>`.
+        :emphasis:`User Data`
+            The user data is data that you provide to the application software that runs on your EC2
+            instance. The application software can access this data through the :ec2-ug:`Instance
+            Meta Data Service (IMDS) <ec2-instance-metadata>`.
 
-    .. figure:: images/launch-ami-tke.png
-        :scale: 50
+        .. figure:: images/launch-ami-tke.png
 
-        Launching an AMI from AWS Explorer
+           Launching an AMI from AWS Explorer
 
-4.  Click :guilabel:`Finish`.
+    #.  Click :guilabel:`Finish`.
 
-5.  In AWS Explorer, under the :guilabel:`Amazon EC2` node, right-click the :guilabel:`Instances`
-    subnode and select :guilabel:`Open EC2 Instances View`.
+    #.  In AWS Explorer, under the :guilabel:`Amazon EC2` node, right-click the
+        :guilabel:`Instances` subnode and select :guilabel:`Open EC2 Instances View`.
 
-    Your EC2 instance should appear in the :guilabel:`EC2 Instances` view. It may take a few minutes
-    for the instance to transition into the :guilabel:`running` state. Once the instance is running,
-    you can right-click the instance to bring up a context menu of operations that you can perform
-    on the instance. For example, you can terminate the instance from this menu. You can also copy
-    the instance's public DNS address. You would use this address to connect to the instance using
-    SSH.
+        Your EC2 instance should appear in the :guilabel:`EC2 Instances` view. It may take a few
+        minutes for the instance to transition into the :guilabel:`running` state. Once the instance
+        is running, you can right-click the instance to bring up a context menu of operations that
+        you can perform on the instance. For example, you can terminate the instance from this menu.
+        You can also copy the instance's public DNS address. You would use this address to connect
+        to the instance using SSH.
 
-    .. figure:: images/instances-view-ami-launch-start-ebs.png
-        :scale: 50
+        .. figure:: images/instances-view-ami-launch-start-ebs.png
 
-        List of Amazon EC2 instances
+           List of Amazon EC2 instances
 

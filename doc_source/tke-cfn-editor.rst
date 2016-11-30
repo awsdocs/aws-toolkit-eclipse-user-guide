@@ -26,6 +26,7 @@ The |tke| includes a built-in |CFN| template editor. Among the features supporte
 
 .. toctree::
    :caption: In This Section
+   :name: tke-cfn-editor-toc
    :maxdepth: 1
 
    tke-cfn-editor-adding-template
