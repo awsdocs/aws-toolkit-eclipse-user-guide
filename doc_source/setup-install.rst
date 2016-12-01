@@ -92,7 +92,8 @@ Some versions of Eclipse, (notably *Mars* and *Neon*), may fail to fetch the lat
 a bug in old versions of the `Oomph plugin <https://projects.eclipse.org/projects/tools.oomph>`_. To
 work around this issue:
 
-#. Make sure that you're using :code:`https://aws.amazon.com/eclipse/` as the |tke| update site.
+#. Make sure that you're using :code:`https://aws.amazon.com/eclipse/site.xml` as the |tke| update
+   site.
 
 #. Delete the :file:`~/.eclipse/org.eclipse.oomph.p2/cache/` directory to remove cached content.
 

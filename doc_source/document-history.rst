@@ -18,6 +18,10 @@ The following table describes the important changes since the last release of th
 
 **Last documentation update:** |today|
 
+Dec 01, 2016
+    Added a new section that provides detail about the new :doc:`serverless project wizard
+    <serverless-projects>`.
+
 Dec 22, 2015
     Removed the *Additional Resources* topic |mdash| the information from that page is now available
     on the first page of the guide, under the heading :ref:`additional-resources`.
