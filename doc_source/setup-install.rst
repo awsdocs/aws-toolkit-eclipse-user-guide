@@ -52,26 +52,26 @@ Install the |tke|
 
 .. topic:: To install the AWS Toolkit for Eclipse
 
-    #.  Start Eclipse.
-
-    #.  Click :guilabel:`Help` and then click :guilabel:`Install New Software`.
+    #.  Within Eclipse, click :guilabel:`Help` and then click :guilabel:`Install New Software`.
 
     #.  In the :guilabel:`Work with` box, type |eclipse-update-url| and then press :kbd:`Enter`.
 
-    #.  Choose the components of the |tke| that you want to install. If you want to install *all*
-        components, click :guilabel:`Select All`. Also note:
+    #.  Choose the components of the |tke| that you want to install. Click :guilabel:`Select All` to
+        install all components at once.
 
-        * *AWS Toolkit for Eclipse Core* (in the *AWS Core Management Tools* section) is
-          **required**; all other components are optional.
+        .. note::
 
-        * Support for the |sdk-android|_ *requires* that you have the Google Android Developer Tools
-          (ADT) for Eclipse installed first. If you have not yet installed the ADT, make sure that
-          :guilabel:`AWS SDK for Android` is *unchecked*, or installation will fail.
+           * *AWS Toolkit for Eclipse Core* (in the *AWS Core Management Tools* section) is
+             **required**; all other components are optional.
 
-        * Support for the |RDS| or |SDB| managers requires that the *Eclipse Data Tools Platform*
-          (DTP) is installed. The DTP is installed by default with the "Java EE Developers" version
-          of Eclipse, or can be `installed separately
-          <https://eclipse.org/datatools/downloads.php>`_.
+           * Support for the |sdk-android|_ *requires* that you have the Google Android Developer
+             Tools (ADT) for Eclipse installed first. If you have not yet installed the ADT, make
+             sure that :guilabel:`AWS SDK for Android` is *unchecked*, or installation will fail.
+
+           * Support for the |RDS| or |SDB| managers requires that the *Eclipse Data Tools Platform*
+             (DTP) is installed. The DTP is installed by default with the "Java EE Developers"
+             version of Eclipse, or can be `installed separately
+             <https://eclipse.org/datatools/downloads.php>`_.
 
     #.  Once you have made your selections, click :guilabel:`Next` (or :guilabel:`Finish`) to
         complete installation.
