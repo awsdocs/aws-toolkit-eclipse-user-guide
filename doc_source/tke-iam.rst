@@ -52,18 +52,18 @@ that are attached to the group. For more information, see :ref:`tke-create-an-ia
 Using the Toolkit, you can also generate AWS credentials (access key ID and secret access key) for
 the IAM user. For more information, see :ref:`tke-generate-credentials-for-an-iam-user`.
 
-**To create an IAM User**
+.. topic:: To create an IAM User
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
-    right-click the :guilabel:`Users` node, and then select :guilabel:`Create New Users`.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
+        right-click the :guilabel:`Users` node, and then select :guilabel:`Create New Users`.
 
-    .. image:: images/iam-users-create-menu.png
+        .. image:: images/iam-users-create-menu.png
 
-2.  In the :guilabel:`Create New Users` dialog box, enter up to five names for new IAM users, and
-    then click :guilabel:`Finish`. For information about constraints on names for IAM users, see
-    :iam-ug:`Limitations on IAM Entities <LimitationsOnEntities>` in the |IAM-ug|.
+    #.  In the :guilabel:`Create New Users` dialog box, enter up to five names for new IAM users, and
+        then click :guilabel:`Finish`. For information about constraints on names for IAM users, see
+        :iam-ug:`Limitations on IAM Entities <reference_iam-limits>` in the |IAM-ug|.
 
-    .. image:: images/iam-users-create-dlg.png
+        .. image:: images/iam-users-create-dlg.png
 
 For information about adding a user to a group, see :ref:`tke-add-an-iam-user-to-an-iam-group`. For
 information about how to create a policy and attach it to the user, see
@@ -77,33 +77,32 @@ Create an IAM Group
 
 You can add |IAM| users to groups in order to make it easier to manage permissions. Any permissions
 that are attached to the group apply to any users in that group. For more information about IAM
-groups, see :iam-ug:`Working with Users and Groups <Using_WorkingWithGroupsAndUsers>` in the
-|IAM-ug|.
+groups, see :iam-ug:`Working with Users and Groups <id>` in the |IAM-ug|.
 
 When you create a group, you can create a policy that includes the permissions that members of the
 group will have.
 
-**To create an IAM group**
+.. topic:: To create an IAM group
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
-    right-click the :guilabel:`Groups` node, and then select :guilabel:`Create New Group`.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
+        right-click the :guilabel:`Groups` node, and then select :guilabel:`Create New Group`.
 
-    .. image:: images/iam-group-create-menu.png
+        .. image:: images/iam-group-create-menu.png
 
-2.  Enter a name for the new IAM group and then click :guilabel:`Next`.
+    #.  Enter a name for the new IAM group and then click :guilabel:`Next`.
 
-    .. image:: images/iam-group-create-dlg.png
+        .. image:: images/iam-group-create-dlg.png
 
-3.  Enter a name for the policy that establishes what members of the group are allowed to do. Enter
-    the policy as a JSON document, and then click :guilabel:`OK`.
+    #.  Enter a name for the policy that establishes what members of the group are allowed to do.
+        Enter the policy as a JSON document, and then click :guilabel:`OK`.
 
-    .. image:: images/iam-create-group-permissions.png
+        .. image:: images/iam-create-group-permissions.png
 
-    The policy name must be unique within your account. The JSON that you enter for the policy must
-    validate, or you will not be able to save the policy. For information about how to create a
-    policy, see :iam-ug:`Overview of Policies <PoliciesOverview>` in the |IAM-ug|.
+        The policy name must be unique within your account. The JSON that you enter for the policy
+        must validate, or you will not be able to save the policy. For information about how to
+        create a policy, see :iam-ug:`Overview of Policies <access_policies>` in the |IAM-ug|.
 
-4.  Click :guilabel:`Finish`.
+    #.  Click :guilabel:`Finish`.
 
 For information about attaching additional policies to the IAM group, see
 :ref:`tke-create-an-iam-policy`.
@@ -115,29 +114,29 @@ Add an IAM User to an IAM Group
 ===============================
 
 If an IAM user is added to a group, any policies that are attached to the group are also in effect
-for the user. For more information about IAM users, see :iam-ug:`Users and Groups
-<Using_WorkingWithGroupsAndUsers>` in the |IAM-ug|.
+for the user. For more information about IAM users, see :iam-ug:`Users and Groups <id>` in the
+|IAM-ug|.
 
-**To add an IAM user to a IAM group**
+.. topic:: To add an IAM user to a IAM group
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
-    right-click the :guilabel:`Groups` node, and then select :guilabel:`Open Groups Editor`. Note
-    that you add IAM users to IAM groups from the :guilabel:`Groups` node in :guilabel:`AWS
-    Explorer` rather than from the :guilabel:`Users` node.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
+        right-click the :guilabel:`Groups` node, and then select :guilabel:`Open Groups Editor`. Note
+        that you add IAM users to IAM groups from the :guilabel:`Groups` node in :guilabel:`AWS
+        Explorer` rather than from the :guilabel:`Users` node.
 
-2.  In the :guilabel:`Groups` editor, select the group you want to add users to, and then click the
-    :guilabel:`Users` tab.
+    #.  In the :guilabel:`Groups` editor, select the group you want to add users to, and then click the
+        :guilabel:`Users` tab.
 
-    .. image:: images/iam-group-users-tab.png
+        .. image:: images/iam-group-users-tab.png
 
-3.  On the right-hand side of the bottom pane, click the :guilabel:`Add Users` button.
+    #.  On the right-hand side of the bottom pane, click the :guilabel:`Add Users` button.
 
-    .. image:: images/iam-group-add-users-button.png
+        .. image:: images/iam-group-add-users-button.png
 
-4.  In the :guilabel:`Add Users to Group` dialog box, select the users you want to add, and then
-    click :guilabel:`OK`.
+    #.  In the :guilabel:`Add Users to Group` dialog box, select the users you want to add, and then
+        click :guilabel:`OK`.
 
-    .. image:: images/iam-group-add-users-to-group-dlg.png
+        .. image:: images/iam-group-add-users-to-group-dlg.png
 
 
 .. _tke-generate-credentials-for-an-iam-user:
@@ -148,26 +147,26 @@ Manage Credentials for an IAM User
 For each user, you can add a password. IAM users use a password to work with AWS resources in the
 |console|.
 
-**To create a password for an IAM user**
+.. topic:: To create a password for an IAM user
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
-    right-click the :guilabel:`Users` node, and then select :guilabel:`Open Users Editor`.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
+        right-click the :guilabel:`Users` node, and then select :guilabel:`Open Users Editor`.
 
-2.  In the users listing, select the user you want to create a password for, and then click the
-    :guilabel:`Summary` tab.
+    #.  In the users listing, select the user you want to create a password for, and then click the
+        :guilabel:`Summary` tab.
 
-    .. image:: images/iam-users-summary-tab.png
+        .. image:: images/iam-users-summary-tab.png
 
-3.  On the right-hand side of the bottom pane, click the :guilabel:`Update Password` button.
+    #.  On the right-hand side of the bottom pane, click the :guilabel:`Update Password` button.
 
-    .. image:: images/iam-users-update-password-button.png
+        .. image:: images/iam-users-update-password-button.png
 
-4.  In the :guilabel:`Update User Password` dialog box, enter a password and then click
-    :guilabel:`OK`.
+    #.  In the :guilabel:`Update User Password` dialog box, enter a password and then click
+        :guilabel:`OK`.
 
-    .. note:: The new password will overwrite any existing password.
+        .. note:: The new password will overwrite any existing password.
 
-    .. image:: images/iam-users-update-user-password-dlg.png
+        .. image:: images/iam-users-update-user-password-dlg.png
 
 For each user you can also generate a set of access keys (an access key ID and a secret access key).
 These keys can be used to represent the user for programmatic access to AWS |mdash| for example, to
@@ -175,35 +174,35 @@ use the AWS command-line interface (CLI), to sign programmatic requests using th
 AWS services through the Toolkit. (For information about how to specify credentials for use with the
 Toolkit, see :doc:`setup-credentials`.)
 
-**To generate access keys for an IAM user**
+.. topic:: To generate access keys for an IAM user
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
-    right-click the :guilabel:`Users` node, and then select :guilabel:`Open Users Editor`.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
+        right-click the :guilabel:`Users` node, and then select :guilabel:`Open Users Editor`.
 
-2.  In the users listing, select the user you want to generate keys for, and then click the
-    :guilabel:`Summary` tab.
+    #.  In the users listing, select the user you want to generate keys for, and then click the
+        :guilabel:`Summary` tab.
 
-    .. image:: images/iam-users-summary-tab.png
+        .. image:: images/iam-users-summary-tab.png
 
-3.  Click the :guilabel:`Manage Access Keys` button.
+    #.  Click the :guilabel:`Manage Access Keys` button.
 
-    .. image:: images/iam-users-manage-access-keys-button.png
+        .. image:: images/iam-users-manage-access-keys-button.png
 
-    A window is displayed where you can manage access keys for the user.
+        A window is displayed where you can manage access keys for the user.
 
-    .. image:: images/iam-user-create-access-key-listing-dlg.png
+        .. image:: images/iam-user-create-access-key-listing-dlg.png
 
-4.  Click the :guilabel:`Create Access Key` button.
+    #.  Click the :guilabel:`Create Access Key` button.
 
-    The :guilabel:`Manage Access Key` dialog box is displayed.
+        The :guilabel:`Manage Access Key` dialog box is displayed.
 
-    .. image:: images/iam-user-manage-access-key-dlg.png
+        .. image:: images/iam-user-manage-access-key-dlg.png
 
-5.  Click the :guilabel:`Download` button to download a comma-separated value (CSV) file that
-    contains the credentials that were generated.
+    #.  Click the :guilabel:`Download` button to download a comma-separated value (CSV) file that
+        contains the credentials that were generated.
 
-    .. note:: This will be your only opportunity to view and download these access keys. If you lose
-        these keys, you must delete them and create a new set of access keys.
+        .. note:: This will be your only opportunity to view and download these access keys. If you
+           lose these keys, you must delete them and create a new set of access keys.
 
 You can generate only two sets of credentials per IAM user. If you already have two sets of
 credentials and you need to create an additional set, you must delete one of the existing sets
@@ -214,24 +213,24 @@ AWS that are made using those credentials will fail. This is useful if you want 
 disable access to AWS for that set of credentials. You can reactivate credentials that were
 previously deactivated.
 
-**To delete, deactivate, or reactivate access keys for an IAM user**
+.. topic:: To delete, deactivate, or reactivate access keys for an IAM user
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
-    right-click the :guilabel:`Users` node, and then select :guilabel:`Open Users Editor`.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
+        right-click the :guilabel:`Users` node, and then select :guilabel:`Open Users Editor`.
 
-2.  In the users listing, select the user you want to manage access keys for, click the
-    :guilabel:`Summary` tab, and then click the :guilabel:`Manage Access Keys` button.
+    #.  In the users listing, select the user you want to manage access keys for, click the
+        :guilabel:`Summary` tab, and then click the :guilabel:`Manage Access Keys` button.
 
-3.  In the window that lists the access keys for that user, right-click the credentials you want to
-    manage and then choose one of the following:
+    #.  In the window that lists the access keys for that user, right-click the credentials you want to
+        manage and then choose one of the following:
 
-    *   :guilabel:`Delete Access Key`
+        +   :guilabel:`Delete Access Key`
 
-    *   :guilabel:`Make Inactive`
+        +   :guilabel:`Make Inactive`
 
-    *   :guilabel:`Make Active`
+        +   :guilabel:`Make Active`
 
-    .. image:: images/iam-user-delete-inactivate-keys-menu.png
+        .. image:: images/iam-user-delete-inactivate-keys-menu.png
 
 
 .. _tke-create-an-iam-role:
@@ -246,15 +245,15 @@ you attach to the role determine who can assume the role (the :emphasis:`trusted
 
 In the Toolkit, you can specify the following trusted entities:
 
-*   An AWS service. For example, you can specify that an |EC2| can call other AWS services or that
-    |AWSDP| is allowed to manage |EC2| instances. This is known as a :emphasis:`service role`.
+* An AWS service. For example, you can specify that an |EC2| can call other AWS services or that
+  |AWSDP| is allowed to manage |EC2| instances. This is known as a :emphasis:`service role`.
 
-*   A different account that you own. If you have multiple AWS accounts, you might need to let users
-    in one account use a role to get permissions to access resources that are in another account of
-    yours.
+* A different account that you own. If you have multiple AWS accounts, you might need to let users
+  in one account use a role to get permissions to access resources that are in another account of
+  yours.
 
-*   A third-party account. You might let a third-party vendor manage your AWS resources. In that
-    case, you can create a role in which the trusted entity is the third party's AWS account.
+* A third-party account. You might let a third-party vendor manage your AWS resources. In that case,
+  you can create a role in which the trusted entity is the third party's AWS account.
 
 After you specify who the trusted entity is, you can specify a policy that determines what the role
 is allowed to do.
@@ -266,48 +265,48 @@ to in the role's policy.
 
 For more information about IAM roles, see :iam-ug:`IAM Roles <id_roles>` in the |IAM-ug|.
 
-**To create an IAM role**
+.. topic:: To create an IAM role
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
-    right-click the :guilabel:`Roles` node, and then select :guilabel:`Create New Role`.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node,
+        right-click the :guilabel:`Roles` node, and then select :guilabel:`Create New Role`.
 
-    .. image:: images/iam-role-create-menu.png
+        .. image:: images/iam-role-create-menu.png
 
-2.  Enter a name for the IAM role and then click :guilabel:`Next`.
+    #.  Enter a name for the IAM role and then click :guilabel:`Next`.
 
-    .. image:: images/iam-role-create-dlg.png
+        .. image:: images/iam-role-create-dlg.png
 
-3.  Select the trusted entity for the role. To create a service role, select :guilabel:`AWS Service
-    Roles` and then select a service role from the drop-down list.
+    #.  Select the trusted entity for the role. To create a service role, select :guilabel:`AWS Service
+        Roles` and then select a service role from the drop-down list.
 
-    .. image:: images/iam-create-role-service-role.png
+        .. image:: images/iam-create-role-service-role.png
 
-    To provide access for a user that's defined in a different AWS account that you own, select
-    :guilabel:`Account ID` and enter the AWS account number of the other account.
+        To provide access for a user that's defined in a different AWS account that you own, select
+        :guilabel:`Account ID` and enter the AWS account number of the other account.
 
-    .. image:: images/iam-create-role-cross-account.png
+        .. image:: images/iam-create-role-cross-account.png
 
-    To provide access for a third-party account, select :guilabel:`Account ID` and enter the third
-    party's AWS account number. If the third party has provided you with an :iam-ug:`external ID
-    <id_roles_create_for-user_externalid>`, enter that as well.
+        To provide access for a third-party account, select :guilabel:`Account ID` and enter the third
+        party's AWS account number. If the third party has provided you with an :iam-ug:`external ID
+        <id_roles_create_for-user_externalid>`, enter that as well.
 
-    .. image:: images/iam-create-role-third-party.png
+        .. image:: images/iam-create-role-third-party.png
 
-4.  Click :guilabel:`Next`.
+    #.  Click :guilabel:`Next`.
 
-5.  Enter a name for the policy that establishes what the role is allowed to do. Then enter the
-    policy as a JSON document, and click :guilabel:`OK`.
+    #.  Enter a name for the policy that establishes what the role is allowed to do. Then enter the
+        policy as a JSON document, and click :guilabel:`OK`.
 
-    .. image:: images/iam-create-role-permissions.png
+        .. image:: images/iam-create-role-permissions.png
 
-    The policy name must be unique within your account. The JSON that you enter for the policy must
-    validate, or you will not be able to save the policy. For information about how to create a
-    policy, see :iam-ug:`Overview of Policies <PoliciesOverview>` in the :emphasis:`Using IAM`
-    guide.
+        The policy name must be unique within your account. The JSON that you enter for the policy must
+        validate, or you will not be able to save the policy. For information about how to create a
+        policy, see :iam-ug:`Overview of Policies <access_policies>` in the :emphasis:`Using IAM`
+        guide.
 
-6.  Click :guilabel:`Finish`.
+    #.  Click :guilabel:`Finish`.
 
-The new IAM role appears in the :guilabel:`Roles` editor.
+        The new IAM role appears in the :guilabel:`Roles` editor.
 
 For examples that show how to access AWS using the IAM role associated with an |EC2| instance, see
 :sdk-java-dg:`Using IAM Roles to Grant Access to AWS Resources on Amazon EC2 <java-dg-roles>` in the
@@ -332,55 +331,50 @@ relationship.)
     attach an additional policy. To edit an existing policy on a user, group, or role, use the |IAM|
     console, command-line tools, or API calls.
 
-**To create an IAM policy for a user, group, or role**
+.. topic:: To create an IAM policy for a user, group, or role
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node and
-    then double-click the :guilabel:`Groups` node, the :guilabel:`Users` node, or the
-    :guilabel:`Roles` node.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node and
+        then double-click the :guilabel:`Groups` node, the :guilabel:`Users` node, or the
+        :guilabel:`Roles` node.
 
-2.  Select the group, user, or role you want to attach the policy to, and then click the
-    :guilabel:`Permissions` tab.
+    #.  Select the group, user, or role you want to attach the policy to, and then click the
+        :guilabel:`Permissions` tab.
 
-    .. image:: images/iam-groups-permissions-tab.png
-        :scale: 50%
+        .. image:: images/iam-groups-permissions-tab.png
 
-3.  On the right-hand side of the bottom pane, click the :guilabel:`Attach Policy` button.
+    #.  On the right-hand side of the bottom pane, click the :guilabel:`Attach Policy` button.
 
-    .. image:: images/iam-groups-attach-policy-btn.png
-        :scale: 50%
+        .. image:: images/iam-groups-attach-policy-btn.png
 
-4.  In the :guilabel:`Manage Group Policy`, :guilabel:`Manage User Policy`, or :guilabel:`Manage
-    Role Permissions` dialog box, enter a name for the policy. Then enter the policy as a JSON
-    document, and click :guilabel:`OK`.
+    #.  In the :guilabel:`Manage Group Policy`, :guilabel:`Manage User Policy`, or :guilabel:`Manage
+        Role Permissions` dialog box, enter a name for the policy. Then enter the policy as a JSON
+        document, and click :guilabel:`OK`.
 
-    .. image:: images/iam-groups-manage-group-policy-dlg.png
-        :scale: 50%
+        .. image:: images/iam-groups-manage-group-policy-dlg.png
 
-    The policy name must be unique within your account. The JSON that you enter for the policy must
-    validate, or you will not be able to save the policy. For information about how to create a
-    policy, see :iam-ug:`Overview of IAM Policies <access_policies>` in the |IAM-ug|.
+        The policy name must be unique within your account. The JSON that you enter for the policy must
+        validate, or you will not be able to save the policy. For information about how to create a
+        policy, see :iam-ug:`Overview of IAM Policies <access_policies>` in the |IAM-ug|.
 
-**To create or manage a trust relationship for a role**
+.. topic:: To create or manage a trust relationship for a role
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node and
-    then double-click the :guilabel:`Roles` node.
+    #.  In :guilabel:`AWS Explorer`, expand the :guilabel:`AWS Identity and Access Management` node and
+        then double-click the :guilabel:`Roles` node.
 
-2.  In the :guilabel:`Roles` editor, select the role you want to manage, and then click the
-    :guilabel:`Trust Relationships` tab.
+    #.  In the :guilabel:`Roles` editor, select the role you want to manage, and then click the
+        :guilabel:`Trust Relationships` tab.
 
-    .. image:: images/iam-roles-trustrelationships-tab.png
-        :scale: 50%
+        .. image:: images/iam-roles-trustrelationships-tab.png
 
-3.  On the right-hand side of the bottom pane, click the :guilabel:`Edit Trust Relationship` button.
+    #.  On the right-hand side of the bottom pane, click the :guilabel:`Edit Trust Relationship` button.
 
-    .. image:: images/iam-role-trustrelationship-btn.png
-        :scale: 50%
+        .. image:: images/iam-role-trustrelationship-btn.png
 
-4.  In the :guilabel:`Edit Trust Relationship` dialog box, edit the JSON policy document and then
-    click :guilabel:`OK`.
+    #.  In the :guilabel:`Edit Trust Relationship` dialog box, edit the JSON policy document and then
+        click :guilabel:`OK`.
 
-    .. image:: images/iam-roles-edittrustrelationship-dlg.png
-        :scale: 50%
+        .. image:: images/iam-roles-edittrustrelationship-dlg.png
+
 
 .. _tke-set-password-policy:
 
@@ -390,16 +384,15 @@ Set Password Policy
 In the |tke| you can set a password policy for your account. This lets you make sure that passwords
 that are created for IAM users follow certain guidelines for length and complexity. It also lets you
 specify whether users are allowed to change their own passwords. For more information, see
-:iam-ug:`Managing an IAM Password Policy <Using_ManagingPasswordPolicies>` in the |IAM-ug|.
+:iam-ug:`Managing an IAM Password Policy <id_credentials_passwords_account-policy>` in the |IAM-ug|.
 
-**To create an IAM policy for a user or group**
+.. topic:: To create an IAM policy for a user or group
 
-1.  In :guilabel:`AWS Explorer`, under :guilabel:`Identity and Access Management`, double-click the
-    :guilabel:`Password Policy` node.
+   #. In :guilabel:`AWS Explorer`, under :guilabel:`Identity and Access Management`, double-click
+      the :guilabel:`Password Policy` node.
 
-2.  In the :guilabel:`Password Policy` pane, specify the policy options that you want for your AWS
-    account, and then click :guilabel:`Apply Password Policy`.
+   #. In the :guilabel:`Password Policy` pane, specify the policy options that you want for your AWS
+      account, and then click :guilabel:`Apply Password Policy`.
 
-    .. image:: images/iam-password-policy.png
-        :scale: 50%
+      .. image:: images/iam-password-policy.png
 

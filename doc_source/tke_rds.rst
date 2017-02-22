@@ -19,28 +19,25 @@ When you create a database instance, set the TCP port that the database uses to 
 to a value that is accessible from your location. For example, if you are behind a firewall, choose
 a TCP port to which your firewall allows connections. For more information, see the |RDS-ug|_.
 
-1.  In :guilabel:`AWS Explorer`, expand the :guilabel:`Amazon RDS` node. You should see a list of
+#.  In :guilabel:`AWS Explorer`, expand the :guilabel:`Amazon RDS` node. You should see a list of
     the database instances that are associated with your AWS account. Right-click one of these
     instances, and then click :guilabel:`Connect` .
 
     .. figure:: images/tke-rds-aws-explorer-connect.png
-        :scale: 50%
 
-        Connect in context menu in AWS Explorer
+       Connect in context menu in AWS Explorer
 
-2.  The |tke| displays an authentication dialog box. Enter the master password that you specified
+#.  The |tke| displays an authentication dialog box. Enter the master password that you specified
     when you created the database instance. Click :guilabel:`Finish`.
 
     .. figure:: images/tke-rds-auth.png
-        :scale: 50%
 
-        Authenticate against the database instance
+       Authenticate against the database instance
 
-3.  The |tke| brings up the connection to the database instance in the Eclipse Data Source Explorer.
+#.  The |tke| brings up the connection to the database instance in the Eclipse Data Source Explorer.
     From here, you can inspect the structure and data in the database.
 
     .. figure:: images/tke-rds-data-source-explorer.png
-        :scale: 50%
 
-        Data Source Explorer
+       Data Source Explorer
 

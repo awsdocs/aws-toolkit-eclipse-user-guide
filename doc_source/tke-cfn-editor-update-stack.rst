@@ -8,9 +8,13 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-#####################################
-Updating an |CFN| Template in Eclipse
-#####################################
+####################################
+Updating a |CFN| Template in Eclipse
+####################################
+
+.. meta::
+    :description: How to update an AWS Cloudformation template using the AWS Toolkit for Eclipse.
+    :keywords: cloudformation, template, updating, stack
 
 **To update an CloudFormation template from Eclipse**
 

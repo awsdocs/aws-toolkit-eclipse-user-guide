@@ -14,7 +14,6 @@ Set up AWS Credentials
 
 To access |AWSlong| with the |tke|, you must configure the |tke| with AWS account credentials.
 
-
 Get your AWS access keys
 ========================
 
@@ -36,16 +35,16 @@ directory.
 If you have already set your AWS credentials using the AWS CLI, then the |tke| will automatically
 detect and use those credentials. For more information about using the AWS CLI, see the |cli-ug|_.
 
-**To add your access keys to the AWS Toolkit for Eclipse**
+.. topic:: To add your access keys to the AWS Toolkit for Eclipse
 
-1.  Open Eclipse's :guilabel:`Preferences` dialog box and click :guilabel:`AWS Toolkit` in the
-    sidebar.
+    #. Open Eclipse's :guilabel:`Preferences` dialog box and click :guilabel:`AWS Toolkit` in the
+       sidebar.
 
-2.  Type or paste your AWS access key ID in the :guilabel:`Access Key ID` box.
+    #. Type or paste your AWS access key ID in the :guilabel:`Access Key ID` box.
 
-3.  Type or paste your AWS secret access key in the :guilabel:`Secret Access Key` box.
+    #. Type or paste your AWS secret access key in the :guilabel:`Secret Access Key` box.
 
-4.  Click :guilabel:`Apply` or :guilabel:`OK` to store your access key information.
+    #. Click :guilabel:`Apply` or :guilabel:`OK` to store your access key information.
 
 Here's an example of a configured set of default credentials:
 
@@ -66,17 +65,17 @@ credentials file described in :ref:`add-access-keys`. All of the configured prof
 the drop-down box at the top of the AWS Toolkit Preferences Global Configuration screen, labeled
 :guilabel:`Default Profile`.
 
-**To add a new set of access keys**
+.. topic:: To add a new set of access keys
 
-1.  On the :guilabel:`AWS Toolkit Preferences` screen in Eclipse's :guilabel:`Preferences` dialog
-    box, click :guilabel:`Add profile`.
+    #. On the :guilabel:`AWS Toolkit Preferences` screen in Eclipse's :guilabel:`Preferences` dialog
+       box, click :guilabel:`Add profile`.
 
-2.  Add your new account information to the :guilabel:`Profile Details` section.
+    #. Add your new account information to the :guilabel:`Profile Details` section.
 
-    Choose a descriptive name for the :guilabel:`Profile Name`, and enter your access key
-    information in the :guilabel:`Access Key ID` and :guilabel:`Secret Access Key` boxes.
+       Choose a descriptive name for the :guilabel:`Profile Name`, and enter your access key
+       information in the :guilabel:`Access Key ID` and :guilabel:`Secret Access Key` boxes.
 
-3.  Click :guilabel:`Apply` or :guilabel:`OK` to store your access key information.
+    #. Click :guilabel:`Apply` or :guilabel:`OK` to store your access key information.
 
 You can repeat this procedure for as many sets of AWS account information that you need.
 
@@ -88,7 +87,7 @@ application uses the credentials for the configured default account.
 .. image:: images/tke-pref-select-profile.png
 
 .. note:: For an alternative approach to separate your AWS resources, see
-    :doc:`differentiate-resources-with-naming`.
+   :doc:`differentiate-resources-with-naming`.
 
 
 .. _set_credfile_location:
@@ -99,12 +98,12 @@ Changing the AWS credentials file location
 Using the |tke| Preferences screen, you can change the location used by the Toolkit to store and
 load credentials.
 
-**To set the AWS credentials file location**
+.. topic:: To set the AWS credentials file location
 
-* In the AWS Toolkit Preferences dialog, locate the :guilabel:`Credentials file location` section,
-  and enter the pathname of the file where you would like your AWS credentials stored.
+    * In the AWS Toolkit Preferences dialog, locate the :guilabel:`Credentials file location`
+      section, and enter the pathname of the file where you would like your AWS credentials stored.
 
-  .. image:: images/tke-pref-set-credfile-loc.png
+    .. image:: images/tke-pref-set-credfile-loc.png
 
 .. important:: It is :emphasis:`strongly recommended` that you don't store your AWS credential
    information within any network-shared directory or within any source-control-managed projects.

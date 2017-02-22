@@ -8,9 +8,13 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-#######################################
-Validating an |CFN| Template in Eclipse
-#######################################
+######################################
+Validating a |CFN| Template in Eclipse
+######################################
+
+.. meta::
+    :description: How to validate an AWS Cloudformation template using the AWS Toolkit for Eclipse.
+    :keywords: cloudformation, template, validate, validating, stack
 
 **To validate an CloudFormation template in Eclipse**
 

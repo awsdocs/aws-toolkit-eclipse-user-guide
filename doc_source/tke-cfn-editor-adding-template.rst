@@ -8,9 +8,14 @@
    either express or implied. See the License for the specific language governing permissions and
    limitations under the License.
 
-############################################################
-Adding and Accessing |CFN| Templates in Your Eclipse Project
-############################################################
+###############################################
+Adding and Accessing |CFN| Templates in Eclipse
+###############################################
+
+.. meta::
+    :description: How to add or access an AWS Cloudformation template using the AWS Toolkit for
+                  Eclipse.
+    :keywords: cloudformation, template, add, access, load, adding, accessing, loading
 
 **To add a CloudFormation template to your Eclipse project**
 

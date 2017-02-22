@@ -18,5 +18,6 @@ This section provides information about how to accomplish common development tas
    :maxdepth: 1
 
    tke_java_apps
+   serverless-projects
    differentiate-resources-with-naming
 
