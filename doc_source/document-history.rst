@@ -18,6 +18,10 @@ The following table describes the important changes since the last release of th
 
 **Last documentation update:** |today|
 
+Dec 01, 2016
+    Added a new section that provides detail about the new :doc:`serverless project wizard
+    <serverless-projects>`.
+
 Dec 22, 2015
     Removed the *Additional Resources* topic |mdash| the information from that page is now available
     on the first page of the guide, under the heading :ref:`additional-resources`.
@@ -47,5 +51,5 @@ September 27, 2013
 
 September 9, 2013
     This topic tracks recent changes to the |tke-ug|. It is intended as a companion to the `release
-    notes history <http://aws.amazon.com/releasenotes/Eclipse/>`_.
+    notes history <https://aws.amazon.com/releasenotes/Eclipse/>`_.
 

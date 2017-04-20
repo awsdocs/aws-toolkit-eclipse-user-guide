@@ -44,7 +44,7 @@ In addition to this guide, there are a number of other resources available for |
 
 * |sdk-java-ref|_
 
-* `Java developer blog <https://java.awsblog.com/>`_
+* :blog:`Java developer blog <developer/category/java>`
 
 * :forum:`Java developer forums <70>`
 
@@ -60,20 +60,20 @@ In addition to this guide, there are a number of other resources available for |
 
 * `@awsforjava (Twitter) <https://twitter.com/awsforjava>`_
 
-* `license <http://aws.amazon.com/apache2.0/>`_
+* `Toolkit license <https://aws.amazon.com/apache-2-0/>`_
 
-* `Toolkit FAQ <http://aws.amazon.com//eclipse/faqs/>`_
+* `Toolkit FAQ <https://aws.amazon.com/eclipse/faqs/>`_
 
 * :sdk-java-dg:`Getting Started with the AWS SDK for Java <getting-started>`
 
 * `Installing the AWS Toolkit for Eclipse (video)
-  <http://media.amazonwebservices.com/videos/eclipse-java-sdk-video.html>`_
+  <https://media.amazonwebservices.com/videos/eclipse-java-sdk-video.html>`_
 
 * `Using AWS Elastic Beanstalk with the AWS Toolkit for Eclipse (video)
-  <http://d1un85p0f2qstc.cloudfront.net/eclipse/elasticbeanstalk/index.html>`_
+  <https://d1un85p0f2qstc.cloudfront.net/eclipse/elasticbeanstalk/index.html>`_
 
 * `Amazon SimpleDB Management in AWS Toolkit for Eclipse (video)
-  <http://media.amazonwebservices.com/videos/eclipse-sdb-management-video.html>`_
+  <https://media.amazonwebservices.com/videos/eclipse-sdb-management-video.html>`_
 
 * `AWS Toolkit for Eclipse: Amazon EC2 Management (video)
   <http://d1un85p0f2qstc.cloudfront.net/eclipse/ec2/index.html>`_

@@ -6,7 +6,7 @@
 # use this file except in compliance with the License.  A copy of the License
 # is located at
 #
-#  http://aws.amazon.com/apache2.0
+#  https://aws.amazon.com/apache2.0
 #
 # or in the "LICENSE" file accompanying this file. This file is distributed on
 # an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either

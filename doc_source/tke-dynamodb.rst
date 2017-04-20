@@ -40,8 +40,8 @@ Using the |tke|, you can create a new |DDB| table.
 3.  Enter a primary hash key attribute in the :guilabel:`Hash key attribute` box, and select the
     hash key type from the :guilabel:`Hash key type` drop-down list. |DDB| builds an unordered hash
     index using the primary key attribute and an optional sorted range index using the range primary
-    key attribute. For more information about the primary hash key attribute, see :ddb-dg:`Primary
-    Key <DataModel>` in the |DDB-dg|.
+    key attribute. For more information about the primary hash key attribute, see
+    :ddb-dg:`Partitions and Data Distribution <HowItWorks.Partitions>` in the |DDB-dg|.
 
 4.  Optionally, specify a range primary key by selecting :guilabel:`Use a range key`. Enter a range
     key attribute in the :guilabel:`Range key attribute` box, and select a range key type from the
@@ -50,8 +50,8 @@ Using the |tke|, you can create a new |DDB| table.
 5.  Specify the number of read capacity units in the :guilabel:`Read capacity units` box, and
     specify the number of write capacity units in the :guilabel:`Write capacity units` box. You must
     specify a minimum of 3 read capacity units and 5 write capacity units. For more information
-    about read and write capacity units, see :ddb-dg:`Provisioned Throughput in Amazon DynamoDB
-    <ProvisionedThroughputIntro>` in the |DDB-dg|.
+    about read and write capacity units, see :ddb-dg:`Provisioned Throughput
+    <HowItWorks.ProvisionedThroughput>` in the |DDB-dg|.
 
 6.  Click :guilabel:`Finish` to create the table. Click the refresh button in :guilabel:`AWS
     Explorer` to view your new table in the table list.
