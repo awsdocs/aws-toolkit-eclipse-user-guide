@@ -1,3 +1,4 @@
 output/
 build/
 shared_content/
+.project
