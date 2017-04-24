@@ -21,4 +21,5 @@
    getting-started
    tke_basics
    aws_explorer
+   trouble-shooting
    document-history
