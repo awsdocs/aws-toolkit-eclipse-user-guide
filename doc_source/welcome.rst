@@ -16,10 +16,14 @@ The |tke|_ is an open source plug-in for the Eclipse integrated development envi
 makes it easier for developers to develop, debug, and deploy Java applications that use |AWSlong|.
 It enhances the Eclipse IDE with additional features:
 
-* The |sdk-java| is included and installed as part of the |tke|
+* The |sdk-java| is included and managed by Maven when you are creating a new AWS project in the |tke|
 
 * |explorer|, an interface to |AWSlong| that allows you to manage your AWS resources from within the
   Eclipse environment.
+  
+* AWS Lambda Java project and SAM project blueprints, deployment and debugging
+
+* AWS CodeCommit cloning repositories and AWS CodeStar importing projects
 
 * |EBlong| deployment and debugging
 
