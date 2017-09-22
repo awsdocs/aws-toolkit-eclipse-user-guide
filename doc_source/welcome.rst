@@ -20,10 +20,13 @@ It enhances the Eclipse IDE with additional features:
 
 * |explorer|, an interface to |AWSlong| that allows you to manage your AWS resources from within the
   Eclipse environment.
-  
-* |LAMlong| Java project and SAM project blueprints, deployment and debugging
 
-* |ACClong| cloning repositories and AWS CodeStar importing projects
+* |LAMlong| Java project and Serverless Application Model (SAM) project blueprint creation,
+  deployment and debugging
+
+* |ACClong| repository cloning
+
+* Integration with |ACSlong|
 
 * |EBlong| deployment and debugging
 
@@ -81,4 +84,3 @@ In addition to this guide, there are a number of other resources available for |
 
 * `AWS Toolkit for Eclipse: Amazon EC2 Management (video)
   <http://d1un85p0f2qstc.cloudfront.net/eclipse/ec2/index.html>`_
-
