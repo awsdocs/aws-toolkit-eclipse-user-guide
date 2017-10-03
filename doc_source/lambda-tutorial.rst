@@ -23,39 +23,44 @@ with first-hand experience in using |LAM| with the |tke|.
 
 .. _lambda-tutorial-create-handler-class:
 
-Create a |LAM| handler class
+Create an |LAMlong| project
 ============================
 
 First, you will implement the code as a method in a handler class. The |tke| provides a new project
-wizard to help you create a new handler class.
+wizard to help you create a new handler class. The |LAM| project is a Maven project which uses a
+POM.xml file for managing package dependencies. You can use the Maven command line tool for
+building, testing, and deploying your application. For more information about Maven, see the
+`Maven project documentation <https://maven.apache.org>`_.
 
-.. topic:: To create an Lambda handler class
+.. topic:: To create an |LAMlong| project
 
     #.  On the Eclipse toolbar, open the drop-down Amazon Web Services menu (identified by the AWS
-        icon) and select :guilabel:`New AWS Lambda Java project...`
+        icon) and select :guilabel:`New AWS Lambda Java project...` This option is also available from the
+        Eclipse menu bar under *File -> New -> AWS Lambda Java Project*.
 
     #.  Add a *Group ID*, *Artifact ID*, and *class name* in the associated input
-        boxes. The Group ID and Artifact ID refer to the IDs that identify a maven build artifact.
-        To learn more about maven artifacts see `Maven project descriptor reference
-        <https://maven.apache.org/ref/3.5.0/maven-model/maven.html#project>`_ which contains
-        a definition of those fields.
+        boxes. The Group ID and Artifact ID refer to the IDs that identify a Maven build artifact.
         This tutorial will use the following sample values:
 
         * :guilabel:`Group ID`: *com.example.lambda*
         * :guilabel:`Artifact ID`: *demo*
         * :guilabel:`Class name`: *Hello*
 
-        The Package Name field is a concatination of the Group ID and the Artifact ID and will be updated accordingly.
-        While you type, the code in the :guilabel:`Source preview` will change to reflect the
-        changes you make in the dialog.
+        The :guilabel:`Package Name` field is the package namespace for the |LAMlong| handler class.
+        The default value for this field is a concatination of the Group ID and the Artifact ID
+        following Maven project conventions. This field is automatically updated when the
+        :guilabel:`Group ID` and :guilabel:`Artifact ID` fields get updated.
 
-    #.  For :guilabel:`Input Type`, choose *Custom*. For information about each of the available
+    #.  For :guilabel:`Input Type`, select *Custom*. For information about each of the available
         input types, see :doc:`lambda-ref-create-project`.
 
     #.  Verify that your entries look like the following screenshot (modify them if they are not), and
         then click :guilabel:`Finish`.
 
         .. image:: images/lambda_tutorial_create_project_filled.png
+
+        While you type, the code in the :guilabel:`Source preview` will change to reflect the
+        changes you make in the dialog.
 
     #.  Once you click :guilabel:`Finish`, your project's directory and source files will be
         generated in your eclipse workspace, and a new web browser window will appear, displaying
@@ -93,22 +98,15 @@ parameter.
             :language: java
             :lines: 16-
 
-Your :file:`Hello.java` file should now contain:
-
-.. literalinclude:: code/HelloLambda/src/example/Hello.java
-    :language: java
-    :lines: 16-
-
-
 .. _lambda-tutorial-assume-role:
 
 Allow |LAM| to assume an |IAM| role
 ===================================
 
 In order for |LAM| to access your |LAM| function, you will need to create an |IAM| role that gives
-it access to your AWS resources. You can create the role two ways, in the |console| or in the |tke|.
+it access to your AWS resources. You can create the role two ways, through the |console| or using the |tke|.
 This section describes how to create the |IAM| role in the console. See
-:ref:`lambda-tutorial-upload-code` section to create one through the |tke|.
+:ref:`lambda-tutorial-upload-code` section to create one using the |tke|.
 
 .. topic:: To create an IAM role for Lambda
 
@@ -143,9 +141,9 @@ Create an |S3| bucket for your |LAM| code
 |LAMlong| requires an |S3| bucket to store your Java project when you upload it. You can either use
 a bucket that already exists in the AWS region in which you'll run your code, or you can create a
 new one specifically for use by |LAM| (recommended). You can create an |S3| bucket two ways,
-in the |console| or in the |tke|.
+through the |console| or using the |tke|.
 This section describes how to create an |S3| bucket in the console. See
-:ref:`lambda-tutorial-upload-code` section to create one through the |tke|.
+:ref:`lambda-tutorial-upload-code` section to create one using the |tke|.
 
 .. topic:: To create an Amazon S3 bucket for use with Lambda
 
@@ -195,13 +193,21 @@ Next, we'll upload your code to |LAMlong| in preparation for invoking it using t
 
         .. image:: images/lambda_tutorial_upload_create_iam_role.png
 
+    #.  Check the :guilabel:`Publish new version` box if you want the upload to create a new version
+        of the |LAM| function. To learn more about versioning and aliases in |LAM|, see the
+        :LAM-dg:`AWS Lambda Function Versioning and Aliases <versioning-aliases>` in the |LAM-dg|.
+
+    #.  If you check the box to publish a new version, the :guilabel:`Provide an alias to this new version`
+        option is enabled. Check this box if you want to associated an alias to this version of the
+        |LAM| function.
+
     #.  Click the :guilabel:`create` button in the :guilabel:`S3 Bucket for Function Code` section if
-        you want to create a new bucket for your |LAM| function. 
+        you want to create a new bucket for your |LAM| function.
 
         .. image:: images/lambda_tutorial_upload_create_s3_bucket.png
 
-    #.  You can leave the rest of the options as they are; the |tke| selects default values for you.
-        Click :guilabel:`Finish` to upload your |LAM| function to AWS.
+    #.  You can leave the :guilabel:`Advance Settings` options as they are; the |tke|
+        selects default values for you. Click :guilabel:`Finish` to upload your |LAM| function to |AWS|.
 
 If the upload succeeds, you will see the |LAM| function name that you chose appear next to your
 Java handler class in the :guilabel:`Project Explorer` view:
