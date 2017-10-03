@@ -34,26 +34,23 @@ wizard to help you create a new handler class.
     #.  On the Eclipse toolbar, open the drop-down Amazon Web Services menu (identified by the AWS
         icon) and select :guilabel:`New AWS Lambda Java project...`
 
-    #.  Add your Java *project name*, *package name*, and *class name* in the associated input
-        boxes. You can choose any valid names that you want. This tutorial will use the following
-        sample values:
+    #.  Add a *Group ID*, *Artifact ID*, and *class name* in the associated input
+        boxes. The Group ID and Artifact ID refer to the IDs that identify a maven build artifact.
+        To learn more about maven artifacts see `Maven project descriptor reference
+        <https://maven.apache.org/ref/3.5.0/maven-model/maven.html#project>`_ which contains
+        a definition of those fields.
+        This tutorial will use the following sample values:
 
-        * :guilabel:`Project name`: *HelloLambda*
-        * :guilabel:`Package name`: *example*
+        * :guilabel:`Group ID`: *com.example.lambda*
+        * :guilabel:`Artifact ID`: *demo*
         * :guilabel:`Class name`: *Hello*
 
+        The Package Name field is a concatination of the Group ID and the Artifact ID and will be updated accordingly.
         While you type, the code in the :guilabel:`Source preview` will change to reflect the
         changes you make in the dialog.
 
     #.  For :guilabel:`Input Type`, choose *Custom*. For information about each of the available
         input types, see :doc:`lambda-ref-create-project`.
-
-    #.  The second :guilabel:`Input Type` field is name of the actual Java type that will be
-        returned, which must be a Java class (not a primitive type such as :code:`float`,
-        :code:`int` or :code:`boolean`). It defaults to :code:`Object`. Change this value to
-        :code:`String`.
-
-    #.  Change the value of :guilabel:`Output Type` to :code:`String`, as well.
 
     #.  Verify that your entries look like the following screenshot (modify them if they are not), and
         then click :guilabel:`Finish`.
@@ -109,7 +106,9 @@ Allow |LAM| to assume an |IAM| role
 ===================================
 
 In order for |LAM| to access your |LAM| function, you will need to create an |IAM| role that gives
-it access to your AWS resources. The easiest way to do this is with the |console|.
+it access to your AWS resources. You can create the role two ways, in the |console| or in the |tke|.
+This section describes how to create the |IAM| role in the console. See
+:ref:`lambda-tutorial-upload-code` section to create one through the |tke|.
 
 .. topic:: To create an IAM role for Lambda
 
@@ -143,7 +142,10 @@ Create an |S3| bucket for your |LAM| code
 
 |LAMlong| requires an |S3| bucket to store your Java project when you upload it. You can either use
 a bucket that already exists in the AWS region in which you'll run your code, or you can create a
-new one specifically for use by |LAM| (recommended).
+new one specifically for use by |LAM| (recommended). You can create an |S3| bucket two ways,
+in the |console| or in the |tke|.
+This section describes how to create an |S3| bucket in the console. See
+:ref:`lambda-tutorial-upload-code` section to create one through the |tke|.
 
 .. topic:: To create an Amazon S3 bucket for use with Lambda
 
@@ -181,17 +183,28 @@ Next, we'll upload your code to |LAMlong| in preparation for invoking it using t
 
     #.  Click :guilabel:`Next` to proceed to :guilabel:`Function Configuration`.
 
-    #.  Enter a description for your target |LAM| function. You can leave the rest of the options as
-        they are; the |tke| chooses default values for you.
+    #.  Enter a description for your target |LAM| function and select the |IAM| role and |S3| bucket
+        that your function will use.
 
         .. image:: images/lambda_tutorial_upload_function_configure.png
 
         For more information about the available options, see :doc:`lambda-ref-upload-function`.
 
-    #.  Click :guilabel:`Finish` to upload your |LAM| function to AWS.
+    #.  Click the :guilabel:`create` button in the :guilabel:`Function Role` section if you want to create
+        a new |IAM| role for your |LAM| function.
+
+        .. image:: images/lambda_tutorial_upload_create_iam_role.png
+
+    #.  Click the :guilabel:`create` button in the :guilabel:`S3 Bucket for Function Code` section if
+        you want to create a new bucket for your |LAM| function. 
+
+        .. image:: images/lambda_tutorial_upload_create_s3_bucket.png
+
+    #.  You can leave the rest of the options as they are; the |tke| selects default values for you.
+        Click :guilabel:`Finish` to upload your |LAM| function to AWS.
 
 If the upload succeeds, you will see the |LAM| function name that you chose appear next to your
-Eclipse project name in the :guilabel:`Project Explorer` view:
+Java handler class in the :guilabel:`Project Explorer` view:
 
 .. image:: images/lambda_tutorial_upload_function_success.png
 
@@ -208,8 +221,10 @@ You can now invoke the function on |LAMlong|.
 
 .. topic:: To invoke your Lambda function
 
-    #.  Right-click in your code window and select :guilabel:`AWS Lambda`, then :guilabel:`Run on AWS
+    #.  Right-click in your code window and select :guilabel:`AWS Lambda`, then :guilabel:`Run Function on AWS
         Lambda`.
+
+    #.  Select the handler class you want to invoke.
 
     #.  In the input box, type a valid JSON string, such as "AWS Lambda".
 
@@ -218,6 +233,9 @@ You can now invoke the function on |LAMlong|.
         .. tip:: You can add new JSON input files in your project, and they will show up in this dialog as
             long as the file name ends with ".json". You can use this feature to provide standard input
             files for your |LAM| functions.
+
+    #.  The :guilabel:`Show Live Log` box is checked by default. This will display the logs from the |LAM|
+        function output in the Eclipse console.
 
     #.  Click :guilabel:`Invoke` and it will send your input data to your |LAM| function. If you have
         set up everything correctly, you should see the return value of your function printed out in the
@@ -241,4 +259,3 @@ description of each option, see the :doc:`lambda-ref`.
 For more information about |LAM| itself, and about writing Java code for |LAM|, see
 :lam-dg:`Authoring Lambda Functions in Java <lambda-java-how-to-create-deployment-package>` in the
 |LAM-dg|.
-

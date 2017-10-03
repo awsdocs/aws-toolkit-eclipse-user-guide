@@ -40,7 +40,12 @@ The Upload Function dialog contains two screens:
 Select Target Lambda Function user interface
 ============================================
 
-.. image:: images/lambda_target_function_filled.png
+.. image:: images/lambda_tutorial_upload_function_create_new.png
+
+Select the Handler
+    :emphasis:`Required`. Select a handler class that contains your |LAM| function code you want to upload.
+
+    :emphasis:`Default`: The handler with the latest change.
 
 Select AWS Region
     :emphasis:`Required`. Select the region where your |LAM| function will be created.
@@ -48,7 +53,7 @@ Select AWS Region
     :emphasis:`Default`: the default |console| region for your AWS account.
 
 Select or create a Lambda function
-    :emphasis:`Required`. You must choose whether to use an existing |LAM| function from the
+    :emphasis:`Required`. You must select whether to use an existing |LAM| function from the
     drop-down list, or to create a new one by entering its name.
 
     :emphasis:`Default`: :guilabel:`Create a new Java function`
@@ -61,9 +66,9 @@ When you click :guilabel:`Finish`, control proceeds to the :guilabel:`Configure 
 Configure Function user interface
 =================================
 
-.. image:: images/lambda_target_function_config_filled.png
+.. image:: images/lambda_tutorial_upload_function_configure.png
 
-The screen is divided into four sections, each with its own settings.
+The screen is divided into five sections, each with its own settings.
 
 Basic Settings
 --------------
@@ -81,35 +86,51 @@ Description
     :emphasis:`Default`: the description is empty.
 
 
-Function Execution
+Function Role
 ------------------
 
-This section allows you to modify the execution environment for the function.
-
-Handler
-    :emphasis:`Required`. The Java class that contains your |LAM| function code.
-
-    :emphasis:`Default`: the package and class name from your project are automatically selected for
-    you.
+This section allows you to select the |IAM| role to apply to the function. You can
+also create a new |IAM| role with the :guilabel:`create` button. The |IAM| role created
+through the |tke| will be a basic role that provides access to |S3|. If access to more
+|AWS| resources is required, you must provide access to each of the services used in the |console|.
 
 IAM Role
     :emphasis:`Required`. The role that Lambda will use to access your AWS resources during the
-    execution of your function. You must make sure that this role provides access for |LAMlong| to
-    at least |S3|, but if your function uses any other AWS resources, you must also provide access
-    to each of the services used.
+    execution of your function.
 
-    :emphasis:`Default`: the first IAM role from your AWS account.
+    :emphasis:`Default`: the first |IAM| role from your AWS account.
+
+Function Versioning and Alias
+-----------------------------
+
+This section allows you publish a new version of your |LAM| function and to specify an alias for that version.
+To learn more about |LAM| versioning and aliasing, see
+:LAM-dg:`AWS Lambda Function Versioning and Aliases <versioning-aliases>` in the
+|LAM-dg|.
+
+Publish new version
+    :emphasis:`Default`: not selected. If selected, the upload will create a new version of the |LAM|
+    function instead of replacing it.
+
+Provide an alias to this new version
+    :emphasis:`Default`: not selected. If selected, you can type in a new alias or use an existing one.
 
 
 S3 Bucket for Function Code
 ---------------------------
 
-This section allows you to set an S3 bucket used by your |LAM| function.
+This section allows you to set an S3 bucket used by your |LAM| function. You can
+also create a new bucket with the :guilabel:`create` button and select settings to encrypt
+your |LAM| function when it uploads to |S3|.
 
 S3 Bucket
     :emphasis:`Required`. An |S3| bucket that can be used by your function's code. Only buckets that
     are in the same region that you will run the function in will be displayed here.
 
+    :emphasis:`Default`: the first bucket in your list or the last bucket you uploaded your |LAM| function to.
+
+Encryption setting
+    :emphasis:`Default`: None is selected.
 
 Advanced Settings
 -----------------
@@ -127,6 +148,3 @@ Timeout (s)
     have failed if it has finished execution.
 
     :emphasis:`Default`: 15 s.
-
-
-
