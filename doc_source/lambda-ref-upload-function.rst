@@ -13,9 +13,7 @@ Upload Function to |LAMlong| Dialog Box
 #######################################
 
 You use the :guilabel:`Upload Function to AWS Lambda` dialog box to create a |LAM| function, and upload
-your
-code to
-run when the |LAM| function is invoked.
+your code to run when the |LAM| function is invoked.
 
 
 Launching the Dialog Box
@@ -48,9 +46,9 @@ Select Target Lambda Function Options
 Select the Handler
     (Required) The handler class that contains the |LAM| function code you want to upload.
 
-    (Default) The handler with the latest change.
+    (Default) The most recently uploaded handler or the first one found if none were previously uploaded.
 
-Select AWS Region
+Select the AWS Region
     (Required) The region in which you want to create your |LAM| function.
 
     (Default) The default |console| region for your AWS account.
@@ -59,9 +57,9 @@ Select or Create a Lambda Function
     (Required) You must select whether to use an existing |LAM| function from the
     drop-down list, or to create a new one by entering its name.
 
-    (Default) :guilabel:`Create a new Java function`
+    (Default) :guilabel:`Create a new Lambda function`
 
-When you choose :guilabel:`Finish`, the :guilabel:`Function Configuration` page opens.
+When you choose :guilabel:`Next`, the :guilabel:`Function Configuration` page opens.
 
 
 .. _lambda-function-config-ui:
@@ -103,6 +101,7 @@ IAM Role
 
     (Default) The first |IAM| role from your AWS account.
 
+
 Function Versioning and Alias
 -----------------------------
 
@@ -137,7 +136,10 @@ S3 Bucket
     to.
 
 Encryption setting
-    (Default) None is selected.
+    (Default) None is selected. To learn more about |S3| encryption, see
+    :S3-dg:`Protecting Data Using Server-Side Encryption <serv-side-encryption>`
+    in the |S3-dg|.
+
 
 Advanced Settings
 -----------------
