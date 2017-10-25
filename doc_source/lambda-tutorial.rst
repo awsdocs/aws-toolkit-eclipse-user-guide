@@ -81,7 +81,7 @@ you in Eclipse.
 Implement the Handler Method
 ============================
 
-The :guilabel:`Create New Project` dialog box provides a skeleton project for you. However, you have to
+You use the :guilabel:`Create New Project` dialog box to create a skeleton project. Now
 fill in the code that will be run when your |LAM| function is invoked. (In this case, by a custom
 event that sends a String to your function, as you specified when setting your method's input
 parameter.)
@@ -108,8 +108,7 @@ Allow |LAM| to Assume an |IAM| Role
 
 For |LAM| to be able to access your |LAM| function, you have to create an |IAM| role that gives
 it access to your AWS resources. You can create the role in two ways, either through the |console| or
-by using
-the |tke|.
+by using the |tke|.
 This section describes how to create the |IAM| role in the console. See
 :ref:`lambda-tutorial-upload-code` to create one using the |tke|.
 
@@ -117,23 +116,18 @@ This section describes how to create the |IAM| role in the console. See
 
     #.  Sign in to the |console|_.
 
-    #.  Open the :console:`IAM console <iam>`.
+    #.  From the :guilabel:`Services` menu, open the :console:`IAM console <iam>`.
 
     #.  In the Navigation pane, choose :guilabel:`Roles`, and then choose :guilabel:`Create role`.
 
-    #.  Add a name for your role, such as :code:`hello-lambda-role`, and choose :guilabel:`Next Step`.
-
-    #.  For :guilabel:`Select role type`, choose :guilabel:`AWS service`, and then choose :guilabel:`Lambda`
+    #.  For :guilabel:`Select type of trusted entity`, choose :guilabel:`AWS service`, and then choose :guilabel:`Lambda`
         for the service that will use this role. Then choose :guilabel:`Next: Permissions`.
 
-    #.  For :guilabel:`Attach permissions policy`, choose :guilabel:`AmazonS3FullAccess`.         This allows |LAM| to access your |S3| resources. Then choose :guilabel:`Next: Review`.
+    #.  For :guilabel:`Attach permissions policy`, choose :guilabel:`AWSLambdaBasicExecutionRole`.
+        This allows |LAM| to write to your |CW| Logs resources. Then choose :guilabel:`Next: Review`.
 
-        .. note:: |S3| is required because |LAM| will upload your code to an |S3| bucket when you
-                  deploy and run your |LAM| function. You can use a bucket that you create (this is covered
-                  in the next section) or use an existing bucket.
-
-    #.  Review your role parameters, and then choose :guilabel:`Create role` to finish creating the |IAM|
-        role.
+    #.  Add a name for your role, such as :code:`hello-lambda-role`, and a description for the role.
+        Then choose :guilabel:`Create role` to finish creating the |IAM| role.
 
 
 .. _lambda-tutorial-create-bucket:
@@ -151,7 +145,9 @@ This section describes how to create an |S3| bucket in the console. See
 
 .. topic:: To create an Amazon S3 bucket for use with Lambda
 
-    #.  Log in to AWS and go to the :console:`S3 console <s3>`.
+    #.  Sign in to the |console|_.
+
+    #.  From the :guilabel:`Services` menu, open the :console:`S3 console <s3>`.
 
     #.  Choose :guilabel:`Create bucket`.
 
@@ -172,9 +168,10 @@ Next, you upload your code to |LAMlong| in preparation for invoking it using the
 .. topic:: To upload your function to Lambda
 
     #.  Right-click in your code window, choose :guilabel:`AWS Lambda`, and then choose :guilabel:`Upload
-    function to AWS Lambda`.
+        function to AWS Lambda`.
 
-    #.  On the :guilabel:`Select Target Lambda Function` page, choose the AWS Region to use. This should be the same region that you chose for your :ref:`Amazon S3 bucket <lambda-tutorial-create-bucket>`.
+    #.  On the :guilabel:`Select Target Lambda Function` page, choose the AWS Region to use.
+        This should be the same region that you chose for your :ref:`Amazon S3 bucket <lambda-tutorial-create-bucket>`.
 
         .. image:: images/lambda_tutorial_upload_function_create_new.png
            :alt: Select Target Lambda function page
@@ -183,33 +180,45 @@ Next, you upload your code to |LAMlong| in preparation for invoking it using the
 
     #.  Choose :guilabel:`Next`.
 
-    #.  On the :guilabel:`Function Configuration` page, enter a description for your target |LAM|function, and then choose the |IAM| role and |S3| bucket that your function will use.
+    #.  On the :guilabel:`Function Configuration` page, enter a description for your target |LAM|function,
+        and then choose the |IAM| role and |S3| bucket that your function will use.
 
         .. image:: images/lambda_tutorial_upload_function_configure.png
            :alt: Function Configuration page
 
         For more information about the available options, see :doc:`lambda-ref-upload-function`.
 
-    #.  Choose :guilabel:`Create` in :guilabel:`Function Role` if you want to create a new |IAM| role
-    for your |LAM| function.
+    #.  On the :guilabel:`Function Configuration` page, choose :guilabel:`Create` in
+        :guilabel:`Function Role` if you want to create a new |IAM| role
+        for your |LAM| function. Enter a role name in the dialogue box the :guilabel:`Create Role`
+        dialogue box.
 
         .. image:: images/lambda_tutorial_upload_create_iam_role.png
            :alt: Creating a new IAM role in the Function Configuration page
 
-    #.  Choose :guilabel:`Publish new version` if you want the upload to create a new version
-        of the |LAM| function. To learn more about versioning and aliases in |LAM|, see
+    #.  On the :guilabel:`Function Configuration` page, choose :guilabel:`Publish new version`
+        if you want the upload to create a new version of the |LAM| function.
+        To learn more about versioning and aliases in |LAM|, see
         :LAM-dg:`AWS Lambda Function Versioning and Aliases <versioning-aliases>` in the |LAM-dg|.
 
     #.  If you chose to publish a new version, the :guilabel:`Provide an alias to this new version`
         option is enabled. Choose this option if you want to associate an alias with this version of the
         |LAM| function.
 
-    #.  Choose :guilabel:`Create` in the :guilabel:`S3 Bucket for Function Code` section to create a new bucket for your |LAM| function.
+    #.  On the :guilabel:`Function Configuration` page, choose :guilabel:`Create` in
+        the :guilabel:`S3 Bucket for Function Code` section if you want
+        to create a new |S3| bucket for your |LAM| function. Enter a bucket name in the
+        :guilabel:`Create Bucket` dialogue box.
 
         .. image:: images/lambda_tutorial_upload_create_s3_bucket.png
            :alt: Create Bucket page
 
-    #.  Leave the :guilabel:`Advance Settings` options as they are. The |tke|
+    #.  In the :guilabel:`S3 Bucket for Function Code` section, you can also choose to encrypt the
+        uploaded code. For this example, leave :guilabel:`None` selected. To learn more about |S3| encryption, see
+        :S3-dg:`Protecting Data Using Server-Side Encryption <serv-side-encryption>`
+        in the |S3-dg|.
+
+    #.  Leave the :guilabel:`Advanced Settings` options as they are. The |tke|
         selects default values for you. Choose :guilabel:`Finish` to upload your |LAM| function to |AWS|.
 
 If the upload succeeds, you will see the |LAM| function name that you chose appear next to your
@@ -230,7 +239,7 @@ You can now invoke the function on |LAMlong|.
 
 .. topic:: To invoke your Lambda function
 
-    #.  Right-click in your code window, choose :guilabel:`AWS Lambda`, and then choose :guilabel:`Run Function on AWS Lambda`.
+    #.  Right-click in the Eclipse code window, choose :guilabel:`AWS Lambda`, and then choose :guilabel:`Run Function on AWS Lambda`.
 
     #.  Choose the handler class you want to invoke.
 
@@ -243,7 +252,7 @@ You can now invoke the function on |LAMlong|.
                  box if the file name ends with .json. You can use this feature to provide standard input files for your |LAM| functions.
 
     #.  The :guilabel:`Show Live Log` box is checked by default. This displays the logs from the |LAM|
-        function output in the Eclipse console.
+        function output in the Eclipse :guilabel:`Console`.
 
     #.  Choose :guilabel:`Invoke` to send your input data to your |LAM| function. If you have
         set up everything correctly, you should see the return value of your function printed out in the
@@ -259,7 +268,7 @@ Next Steps
 
 Now that you've uploaded and deployed your function, try changing the code and rerunning the
 function. |LAM| automatically reuploads and invokes the function for you, and prints output to
-the console.
+the Eclipse :guilabel:`Console`.
 
 More Info
 =========
