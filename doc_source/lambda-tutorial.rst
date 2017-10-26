@@ -39,10 +39,11 @@ building, testing, and deploying your application. For more information about Ma
         homepage icon), and then choose :guilabel:`New AWS Lambda Java project`. Or on the
         Eclipse menu bar, choose :guilabel:`File`, :guilabel:`New`, :guilabel:`AWS Lambda Java Project`.
 
-    #.  Add a *Group ID*, *Artifact ID*, and *class name* in the associated input
+    #.  Add a *Project name*, *Group ID*, *Artifact ID*, and *class name* in the associated input
         boxes. The Group ID and Artifact ID are the IDs that identify a Maven build artifact.
         This tutorial uses the following example values:
 
+        * :guilabel:`Project name`: *HelloLambda*
         * :guilabel:`Group ID`: *com.example.lambda*
         * :guilabel:`Artifact ID`: *demo*
         * :guilabel:`Class name`: *Hello*
@@ -59,7 +60,7 @@ building, testing, and deploying your application. For more information about Ma
         then choose :guilabel:`Finish`.
 
         .. image:: images/lambda_tutorial_create_project_filled.png
-           :alt: Project name, Group ID, and Artifact ID values in the New AWS Lambda
+           :alt: Project name, Group ID, Artifact ID and class name values in the New AWS Lambda
                  Maven Project dialog box
 
         As you type, the code in the :guilabel:`Source preview` changes to reflect the
@@ -167,8 +168,8 @@ Next, you upload your code to |LAMlong| in preparation for invoking it using the
 
 .. topic:: To upload your function to Lambda
 
-    #.  Right-click in your code window, choose :guilabel:`AWS Lambda`, and then choose :guilabel:`Upload
-        function to AWS Lambda`.
+    #.  Right-click in your Eclipse code window, choose :guilabel:`AWS Lambda`,
+        and then choose :guilabel:`Upload function to AWS Lambda`.
 
     #.  On the :guilabel:`Select Target Lambda Function` page, choose the AWS Region to use.
         This should be the same region that you chose for your :ref:`Amazon S3 bucket <lambda-tutorial-create-bucket>`.
