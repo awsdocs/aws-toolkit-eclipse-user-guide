@@ -93,7 +93,7 @@ Function Role
 
 In this section, you can select the |IAM| role to apply to the function. You can
 also create a new |IAM| role with the :guilabel:`Create` button. The |IAM| role you create
-through the |tke| is a basic role that provides access to |S3|. If you need more access to |AWS| resources, you must provide access to each of the services used in the |console|.
+through the |tke| is a basic role that provides access to |S3|. If you need more access to AWS resources, you must provide access to each of the services used in the |console|.
 
 IAM Role
     (Required) The role that |LAM| uses to access your AWS resources during the

@@ -181,7 +181,7 @@ Next, you upload your code to |LAMlong| in preparation for invoking it using the
 
     #.  Choose :guilabel:`Next`.
 
-    #.  On the :guilabel:`Function Configuration` page, enter a description for your target |LAM|function,
+    #.  On the :guilabel:`Function Configuration` page, enter a description for your target |LAM| function,
         and then choose the |IAM| role and |S3| bucket that your function will use.
 
         .. image:: images/lambda_tutorial_upload_function_configure.png
@@ -220,7 +220,7 @@ Next, you upload your code to |LAMlong| in preparation for invoking it using the
         in the |S3-dg|.
 
     #.  Leave the :guilabel:`Advanced Settings` options as they are. The |tke|
-        selects default values for you. Choose :guilabel:`Finish` to upload your |LAM| function to |AWS|.
+        selects default values for you. Choose :guilabel:`Finish` to upload your |LAM| function to AWS.
 
 If the upload succeeds, you will see the |LAM| function name that you chose appear next to your
 Java handler class in the :guilabel:`Project Explorer` view.
