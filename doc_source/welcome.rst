@@ -73,14 +73,8 @@ In addition to this guide, there are a number of other resources available for |
 
 * :sdk-java-dg:`Getting Started with the AWS SDK for Java <getting-started>`
 
-* `Installing the AWS Toolkit for Eclipse (video)
-  <https://media.amazonwebservices.com/videos/eclipse-java-sdk-video.html>`_
-
 * `Using AWS Elastic Beanstalk with the AWS Toolkit for Eclipse (video)
   <https://d1un85p0f2qstc.cloudfront.net/eclipse/elasticbeanstalk/index.html>`_
-
-* `Amazon SimpleDB Management in AWS Toolkit for Eclipse (video)
-  <https://media.amazonwebservices.com/videos/eclipse-sdb-management-video.html>`_
 
 * `AWS Toolkit for Eclipse: Amazon EC2 Management (video)
   <http://d1un85p0f2qstc.cloudfront.net/eclipse/ec2/index.html>`_
