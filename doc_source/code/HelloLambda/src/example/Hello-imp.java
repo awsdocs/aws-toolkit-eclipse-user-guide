@@ -12,9 +12,11 @@
 # express or implied. See the License for the specific language governing
 # permissions and limitations under the License.
 */
+package com.example.lambda.demo;
 
 @Override
 public String handleRequest(String input, Context context) {
+  context.getLogger().log("Input: " + input);
   String output = "Hello, " + input + "!";
   return output;
 }

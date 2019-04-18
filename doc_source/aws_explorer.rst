@@ -29,4 +29,4 @@ It assumes that you've already :doc:`installed <setup-install>` the |tke| on you
    how_to_view_sns_entries
    tke_rds
    tke-iam
-
+   tke-sam-local

@@ -29,15 +29,15 @@ The |tke| has the following prerequisites:
 
 * *A supported operating system* |ndash| The |tke| is supported on Windows, |unixes|.
 
-* *Java 1.6 or later*
+* *Java 1.8 or later*
 
-* *Eclipse IDE for Java Developers 3.6 or later* |ndash| We attempt to keep the |tke| current with
+* *Eclipse IDE for Java Developers 4.2 or later* |ndash| We attempt to keep the |tke| current with
   the default version available on the `Eclipse download page <https://eclipse.org/downloads/>`_.
 
   .. tip:: Eclipse provides a number of different downloads. We recommend installing the
      :emphasis:`Eclipse IDE for Java EE Developers`, which includes the `Eclipse Web Tools Platform
-     <https://projects.eclipse.org/projects/webtools>`_ required by |EB|, and the `Eclipse Data
-     Tools Platform <http://www.eclipse.org/datatools/>`_ required for |SDB| features. If you
+     <https://projects.eclipse.org/projects/webtools>`_ required by |EB|, the `Eclipse Data
+     Tools Platform <http://www.eclipse.org/datatools/>`_ required for |SDB| features, the `Eclipse EGit <http://www.eclipse.org/egit/>`_, and the `M2Eclipse <http://www.eclipse.org/m2e/>`_. If you
      install another version of Eclipse, make sure that you have (or that you install, using the
      provided links) support for these features.
 
