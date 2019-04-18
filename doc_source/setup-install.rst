@@ -29,7 +29,7 @@ The |tke| has the following prerequisites:
 
 * *A supported operating system* |ndash| The |tke| is supported on Windows, |unixes|.
 
-* *Java 1.8 or later*
+* *Java 1.8*
 
 * *Eclipse IDE for Java Developers 4.2 or later* |ndash| We attempt to keep the |tke| current with
   the default version available on the `Eclipse download page <https://eclipse.org/downloads/>`_.
