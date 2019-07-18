@@ -35,7 +35,7 @@ The |tke| has the following prerequisites:
   the default version available on the `Eclipse download page <https://eclipse.org/downloads/>`_.
 
   .. tip:: Eclipse provides a number of different downloads. We recommend installing the
-     :emphasis:`Eclipse IDE for Java EE Developers`, which includes the `Eclipse Web Tools Platform
+     :emphasis:`Eclipse IDE for Enterprise Java Developers`, which includes the `Eclipse Web Tools Platform
      <https://projects.eclipse.org/projects/webtools>`_ required by |EB|, the `Eclipse Data
      Tools Platform <http://www.eclipse.org/datatools/>`_ required for |SDB| features, the `Eclipse EGit <http://www.eclipse.org/egit/>`_, and the `M2Eclipse <http://www.eclipse.org/m2e/>`_. If you
      install another version of Eclipse, make sure that you have (or that you install, using the
