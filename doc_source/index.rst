@@ -12,6 +12,11 @@
 |tke-ug|
 ########
 
+.. meta::.
+    :keywords: eclipse, aws toolkit, java, eclipse IDE, aws, toolkit for eclipse, aws toolkit for eclipse
+    :description: The Toolkit for Eclipse is a plug-in for the Eclipse IDE that makes it easier for developers to develop, debug, and deploy Java applications that use Amazon Web Services.
+
+
 .. toctree::
    :maxdepth: 1
    :titlesonly:
