@@ -15,9 +15,9 @@ Tutorial: How to Create, Upload, and Invoke an |LAMlong| Function
 This tutorial guides you through the process of a typical |LAMlong| workflow, and provides you
 with first-hand experience using |LAM| with the |tke|.
 
-.. important:: The tutorial assumes that you have an AWS account, have already :doc:`installed the
+.. important:: The tutorial assumes that you have an active AWS account, have already :doc:`installed the
    AWS Toolkit for Eclipse <getting-started>`, and that you understand the basic concepts and
-   features of |LAM|. If you're unfamiliar with |LAM|, learn more at the |LAM|_ home
+   features of |LAM|. If you are unfamiliar with |LAM|, learn more at the |LAM|_ home
    page and in the |LAM-dg|_.
 
 
