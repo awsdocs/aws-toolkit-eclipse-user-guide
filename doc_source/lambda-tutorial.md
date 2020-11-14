@@ -34,7 +34,7 @@ Next, you implement the function in the `HelloLambda` Java project that was just
 
 ## Implement the Handler Method<a name="lambda-tutorial-implement-handler-method"></a>
 
-You use the **Create New Project** dialog box to create a skeleton project\. Now fill in the code that will be run when your Lambda function is invoked\. \(In this case, by a custom event that sends a String to your function, as you specified when setting your method’s input parameter\.\)
+You used the **Create New Project** dialog box to create a skeleton project\. Now fill in the code that will be run when your Lambda function is invoked\. \(In this case, by a custom event that sends a String to your function, as you specified when setting your method’s input parameter\.\)
 
 **To implement your Lambda handler method**
 
